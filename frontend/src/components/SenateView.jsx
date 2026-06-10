@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ModelCards from "./ModelCards";
 import TrendChart from "./TrendChart";
 import PollsTable from "./PollsTable";
@@ -13,13 +13,12 @@ const UF_NOMES = {
   SE: "Sergipe", TO: "Tocantins",
 };
 
-export default function SenateView({ senado, cores }) {
+export default function SenateView({ senado, cores, uf, setUf }) {
   const ufs = Object.keys(senado || {}).sort();
-  const [uf, setUf] = useState(ufs[0] || null);
 
   useEffect(() => {
     if (ufs.length && !ufs.includes(uf)) setUf(ufs[0]);
-  }, [ufs, uf]);
+  }, [setUf, ufs, uf]);
 
   if (!ufs.length) {
     return (

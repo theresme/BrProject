@@ -13,6 +13,8 @@ export default function Methodology({ params }) {
           <span className="font-semibold text-petrol">amostra</span> ×{" "}
           <span className="font-semibold text-petrol">registro no TSE</span>. A
           recência decai pela metade a cada {params?.meiaVidaDias ?? 14} dias.
+          O rating pode usar histórico nacional ou, quando existe base
+          auditável, desempenho local da própria disputa/UF.
         </li>
         <li>
           O <span className="font-semibold text-petrol">house effect</span> de

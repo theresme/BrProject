@@ -70,8 +70,32 @@ def _poll_row(p: Poll) -> dict:
         ],
         "tseRegistro": p.tse_registro,
         "tseEmpresa": p.tse_empresa,
-        "rating": config.institute_rating(p.instituto),
+        "rating": config.institute_rating(p.instituto, p.race_id),
     }
+
+
+def _weights_for(polls: list[Poll], race_id: str | None = None) -> list[dict]:
+    scoped = [p for p in polls if race_id is None or p.race_id == race_id]
+    institutos = sorted(
+        {p.instituto for p in scoped},
+        key=lambda i: -config.institute_rating(i, race_id),
+    )
+    out = []
+    for i in institutos:
+        contextual = config.contextual_institute_rating(i, race_id)
+        rating_base = config.institute_rating_base(i, race_id)
+        out.append({
+            "instituto": i,
+            "rating": config.institute_rating(i, race_id),
+            "ratingBase": rating_base,
+            "ratingBasis": (
+                contextual["basis"] if contextual else
+                "sem histórico local nesta disputa; fallback neutro"
+                if rating_base == "neutro" else None
+            ),
+            "registradaTse": any(p.tse_registro for p in scoped if p.instituto == i),
+        })
+    return out
 
 
 def build_state(polls: list[Poll]) -> dict:
@@ -118,18 +142,11 @@ def build_state(polls: list[Poll]) -> dict:
         block["vagas"] = 2  # 2026 renova 2/3: 2 cadeiras por estado
         senado[uf] = block
 
-    institutos = sorted(
-        {p.instituto for p in polls},
-        key=lambda i: -config.institute_rating(i),
-    )
-    pesos = [
-        {
-            "instituto": i,
-            "rating": config.institute_rating(i),
-            "registradaTse": any(p.tse_registro for p in polls if p.instituto == i),
-        }
-        for i in institutos
-    ]
+    pesos = _weights_for(polls)
+    pesos_por_disputa = {
+        rid: _weights_for(polls, rid)
+        for rid in sorted({p.race_id for p in polls})
+    }
 
     return {
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -139,6 +156,7 @@ def build_state(polls: list[Poll]) -> dict:
         "senado": senado,
         "defaultRace": config.DEFAULT_RACE_ID,
         "pesos": pesos,
+        "pesosPorDisputa": pesos_por_disputa,
         "tseCarregado": tse.loaded,
         "modeloParams": {
             "meiaVidaDias": config.MODEL.half_life_days,

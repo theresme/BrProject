@@ -169,6 +169,74 @@ INSTITUTE_RATINGS: dict[str, float] = {
 }
 DEFAULT_RATING: float = 0.60
 
+# Ratings contextuais por disputa. Eles substituem o rating nacional só quando
+# existe evidência local auditável; caso contrário, o modelo cai no rating
+# nacional acima.
+#
+# Metodologia usada em "senador-pr":
+# - Âncora oficial: TSE/Dados Abertos, votação nominal PR/2022 para Senador.
+# - Pesquisas: última rodada disponível antes do 1º turno de 2022, normalizada
+#   para votos válidos entre candidatos quando a tabela trazia indecisos/outros.
+# - Métrica: erro médio absoluto nos três primeiros da urna (Moro, Paulo
+#   Martins, Álvaro Dias). Rating = 1 - erro/15, com piso 0,40; se errou o
+#   vencedor, fica limitado a 0,50.
+# Fontes documentais:
+# - TSE: votacao_candidato_munzona_2022.zip (PR, cargo Senador)
+# - Wikipédia: Eleições estaduais no Paraná em 2022, seção Pesquisas/Senador
+# - Instituto Veritá: "Previsões 1º turno x resultados das urnas", p. 61
+CONTEXTUAL_INSTITUTE_RATINGS: dict[str, dict[str, dict[str, float | str]]] = {
+    "senador-pr": {
+        "veritá": {
+            "rating": 0.88,
+            "basis": "PR Senado 2022: MAE top-3 1,83 pp; acertou vencedor",
+        },
+        "verita": {
+            "rating": 0.88,
+            "basis": "PR Senado 2022: MAE top-3 1,83 pp; acertou vencedor",
+        },
+        "instituto veritá": {
+            "rating": 0.88,
+            "basis": "PR Senado 2022: MAE top-3 1,83 pp; acertou vencedor",
+        },
+        "instituto verita": {
+            "rating": 0.88,
+            "basis": "PR Senado 2022: MAE top-3 1,83 pp; acertou vencedor",
+        },
+        "irg": {
+            "rating": 0.73,
+            "basis": "PR Senado 2022: MAE top-3 4,01 pp; acertou vencedor",
+        },
+        "irg pesquisa": {
+            "rating": 0.73,
+            "basis": "PR Senado 2022: MAE top-3 4,01 pp; acertou vencedor",
+        },
+        "instituto irg": {
+            "rating": 0.73,
+            "basis": "PR Senado 2022: MAE top-3 4,01 pp; acertou vencedor",
+        },
+        "paraná pesquisas": {
+            "rating": 0.59,
+            "basis": "PR Senado 2022: MAE top-3 6,11 pp; acertou vencedor",
+        },
+        "parana pesquisas": {
+            "rating": 0.59,
+            "basis": "PR Senado 2022: MAE top-3 6,11 pp; acertou vencedor",
+        },
+        "ipec": {
+            "rating": 0.40,
+            "basis": "PR Senado 2022: MAE top-3 10,01 pp; errou vencedor",
+        },
+        "instituto radar": {
+            "rating": 0.40,
+            "basis": "PR Senado 2022: MAE top-3 9,54 pp; errou vencedor",
+        },
+        "radar": {
+            "rating": 0.40,
+            "basis": "PR Senado 2022: MAE top-3 9,54 pp; errou vencedor",
+        },
+    },
+}
+
 # Institutos sem registro no TSE encontrado ganham penalização extra.
 UNREGISTERED_PENALTY: float = 0.50
 
@@ -214,8 +282,26 @@ class ModelConfig:
 MODEL = ModelConfig()
 
 
-def institute_rating(name: str) -> float:
-    """Rating 0..1 do instituto (case-insensitive, melhor esforço)."""
+def contextual_institute_rating(name: str, race_id: str | None = None) -> dict | None:
+    """Rating contextual quando há evidência local para a disputa."""
+    if not race_id:
+        return None
+    k = (name or "").strip().lower()
+    ratings = CONTEXTUAL_INSTITUTE_RATINGS.get(race_id.lower(), {})
+    if k in ratings:
+        return ratings[k]
+    for known, meta in ratings.items():
+        if known in k or k in known:
+            return meta
+    return None
+
+
+def has_contextual_ratings(race_id: str | None = None) -> bool:
+    return bool(race_id and race_id.lower() in CONTEXTUAL_INSTITUTE_RATINGS)
+
+
+def national_institute_rating(name: str) -> float:
+    """Rating nacional 0..1 do instituto."""
     k = (name or "").strip().lower()
     if k in INSTITUTE_RATINGS:
         return INSTITUTE_RATINGS[k]
@@ -223,3 +309,27 @@ def institute_rating(name: str) -> float:
         if known in k or k in known:
             return r
     return DEFAULT_RATING
+
+
+def institute_rating(name: str, race_id: str | None = None) -> float:
+    """Rating 0..1 do instituto (case-insensitive, melhor esforço)."""
+    contextual = contextual_institute_rating(name, race_id)
+    if contextual:
+        return float(contextual["rating"])
+    national = national_institute_rating(name)
+    if has_contextual_ratings(race_id):
+        # Em disputas com matriz local, instituto sem histórico local não recebe
+        # automaticamente prestígio nacional alto; entra neutro/conservador.
+        return min(national, DEFAULT_RATING)
+    return national
+
+
+def institute_rating_base(name: str, race_id: str | None = None) -> str:
+    if contextual_institute_rating(name, race_id):
+        return "local"
+    if has_contextual_ratings(race_id):
+        return "neutro"
+    k = (name or "").strip().lower()
+    if k in INSTITUTE_RATINGS or any(known in k or k in known for known in INSTITUTE_RATINGS):
+        return "nacional"
+    return "padrao"

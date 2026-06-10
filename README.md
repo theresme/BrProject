@@ -93,6 +93,10 @@ Os ratings dos institutos são **editoriais e transparentes** — o painel exibe
 a tabela de pesos ao leitor. Discorde? Ajuste `INSTITUTE_RATINGS` e rode de
 novo.
 
+Para disputas estaduais, o modelo pode usar ratings contextuais por UF/cargo
+quando houver base histórica auditável. A primeira matriz local documentada é
+`senador-pr`; ver `docs/ratings-contextuais.md`.
+
 ## Governador e Senador (estrutura pronta, fonte pendente)
 
 A arquitetura é genérica: `config.RACES` aceita qualquer (cargo, UF, página).

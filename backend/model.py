@@ -58,7 +58,7 @@ def poll_weight(p: Poll, ref: date, one_sided: bool = True) -> float:
         return 0.0
     return (
         _w_tempo(abs(age), CFG.half_life_days)
-        * config.institute_rating(p.instituto)
+        * config.institute_rating(p.instituto, p.race_id)
         * _w_amostra(p.amostra)
         * _w_registro(p)
     )
@@ -123,7 +123,7 @@ def aggregate_race(polls: list[Poll], today: date | None = None) -> dict:
             ref = serie.get(min(days, key=lambda x: abs((x - p.data_fim).days)))
             if ref is None:
                 continue
-            w = config.institute_rating(p.instituto) * _w_amostra(p.amostra)
+            w = config.institute_rating(p.instituto, p.race_id) * _w_amostra(p.amostra)
             key = (p.instituto, cand)
             he_sum[key] += w * (pct - ref)
             he_w[key] += w

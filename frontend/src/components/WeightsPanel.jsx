@@ -1,22 +1,40 @@
 /** Transparência: o peso que o modelo dá a cada instituto. */
-export default function WeightsPanel({ pesos, params }) {
+export default function WeightsPanel({ pesos, params, contextual = false }) {
   if (!pesos?.length) return null;
+  const hasLocal = pesos.some((p) => p.ratingBase === "local");
   return (
     <section className="rounded-2xl border border-hair bg-card shadow-card p-4 sm:p-6">
       <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400">
-        Peso de cada instituto
+        {contextual ? "Peso dos institutos nesta disputa" : "Peso de cada instituto"}
       </h2>
       <p className="mt-1 text-xs leading-relaxed text-gray-500">
-        Rating editorial (0–1) baseado no erro das pesquisas de véspera vs. o
-        resultado oficial em 2018–2022. Multiplica o peso de cada pesquisa.
-        Pesquisa de 2026 sem registro localizado no TSE leva fator{" "}
-        {params?.penalSemRegistro ?? 0.5}×.
+        {hasLocal
+          ? "Quando há histórico local auditável, o rating troca o peso nacional por desempenho na disputa/UF equivalente."
+          : "Rating editorial (0–1) baseado no erro das pesquisas de véspera vs. o resultado oficial em 2018–2022."}{" "}
+        Multiplica o peso de cada pesquisa. Pesquisa de 2026 sem registro
+        localizado no TSE leva fator {params?.penalSemRegistro ?? 0.5}×.
       </p>
       <ul className="mt-3 space-y-2">
         {pesos.map((p) => (
           <li key={p.instituto} className="flex items-center gap-3 text-sm">
             <span className="w-40 truncate text-texto" title={p.instituto}>
               {p.instituto}
+              {p.ratingBase === "local" && (
+                <span
+                  className="ml-1 rounded bg-ambar/15 px-1 text-[10px] font-semibold uppercase text-ambar"
+                  title={p.ratingBasis || "rating local"}
+                >
+                  local
+                </span>
+              )}
+              {p.ratingBase === "neutro" && (
+                <span
+                  className="ml-1 rounded bg-gray-100 px-1 text-[10px] font-semibold uppercase text-gray-500"
+                  title={p.ratingBasis || "sem histórico local nesta disputa"}
+                >
+                  neutro
+                </span>
+              )}
               {!p.registradaTse && (
                 <span className="ml-1 text-gray-400" title="sem registro TSE localizado">*</span>
               )}
@@ -33,7 +51,8 @@ export default function WeightsPanel({ pesos, params }) {
       </ul>
       <p className="mt-3 text-[11px] text-gray-400">
         * nenhum registro localizado no CSV de dados abertos do TSE para as
-        pesquisas nacionais deste instituto.
+        pesquisas desta disputa. Pesos com selo neutro usam fallback
+        conservador enquanto não houver histórico local comparável.
       </p>
     </section>
   );

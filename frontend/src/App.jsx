@@ -15,12 +15,19 @@ export default function App() {
   const { state, error, loading, lastFetch, refresh } = usePoll();
   const [view, setView] = useState("pres"); // "pres" | "sen"
   const [turno, setTurno] = useState(1);
+  const [senadoUf, setSenadoUf] = useState(null);
 
   const race1 = state?.races?.["presidente-1t"];
   const race2 = state?.races?.["presidente-2t"];
   const race = turno === 1 ? race1 : race2;
   const senado = state?.senado || {};
+  const senadoUfs = Object.keys(senado).sort();
+  const activeSenadoUf = senadoUf && senado[senadoUf] ? senadoUf : senadoUfs[0];
   const temSenado = Object.keys(senado).length > 0;
+  const pesosRaceId = view === "sen" && activeSenadoUf
+    ? `senador-${activeSenadoUf.toLowerCase()}`
+    : race && (turno === 1 ? "presidente-1t" : "presidente-2t");
+  const pesos = state?.pesosPorDisputa?.[pesosRaceId] || state?.pesos;
 
   return (
     <div className="min-h-full">
@@ -61,11 +68,16 @@ export default function App() {
             )}
 
             {view === "sen" && (
-              <SenateView senado={senado} cores={state.cores} />
+              <SenateView
+                senado={senado}
+                cores={state.cores}
+                uf={activeSenadoUf}
+                setUf={setSenadoUf}
+              />
             )}
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <WeightsPanel pesos={state.pesos} params={state.modeloParams} />
+              <WeightsPanel pesos={pesos} params={state.modeloParams} contextual={view === "sen"} />
               <Methodology params={state.modeloParams} race={race} />
             </div>
           </main>
