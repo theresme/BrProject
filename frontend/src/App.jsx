@@ -6,17 +6,21 @@ import ModelCards from "./components/ModelCards";
 import TrendChart from "./components/TrendChart";
 import Matchups from "./components/Matchups";
 import PollsTable from "./components/PollsTable";
+import SenateView from "./components/SenateView";
 import WeightsPanel from "./components/WeightsPanel";
 import Methodology from "./components/Methodology";
 import Footer from "./components/Footer";
 
 export default function App() {
   const { state, error, loading, lastFetch, refresh } = usePoll();
+  const [view, setView] = useState("pres"); // "pres" | "sen"
   const [turno, setTurno] = useState(1);
 
   const race1 = state?.races?.["presidente-1t"];
   const race2 = state?.races?.["presidente-2t"];
   const race = turno === 1 ? race1 : race2;
+  const senado = state?.senado || {};
+  const temSenado = Object.keys(senado).length > 0;
 
   return (
     <div className="min-h-full">
@@ -31,23 +35,33 @@ export default function App() {
 
         {state && (
           <main className="mt-6 space-y-6">
-            <TurnoTabs turno={turno} setTurno={setTurno} race2={race2} />
+            <CargoNav view={view} setView={setView} temSenado={temSenado} />
 
-            {turno === 1 && race1 && (
+            {view === "pres" && (
               <>
-                <section className="hero-glow relative overflow-hidden rounded-2xl bg-card border border-hair border-t-[3px] border-t-petrol shadow-card p-6 sm:p-8">
-                  <ModelCards race={race1} />
-                </section>
-                <TrendChart race={race1} cores={state.cores} />
-                <PollsTable race={race1} turno={1} />
+                <TurnoTabs turno={turno} setTurno={setTurno} race2={race2} />
+
+                {turno === 1 && race1 && (
+                  <>
+                    <section className="hero-glow relative overflow-hidden rounded-2xl bg-card border border-hair border-t-[3px] border-t-petrol shadow-card p-6 sm:p-8">
+                      <ModelCards race={race1} />
+                    </section>
+                    <TrendChart race={race1} cores={state.cores} />
+                    <PollsTable race={race1} turno={1} />
+                  </>
+                )}
+
+                {turno === 2 && race2 && (
+                  <>
+                    <Matchups race={race2} />
+                    <PollsTable race={race2} turno={2} />
+                  </>
+                )}
               </>
             )}
 
-            {turno === 2 && race2 && (
-              <>
-                <Matchups race={race2} />
-                <PollsTable race={race2} turno={2} />
-              </>
+            {view === "sen" && (
+              <SenateView senado={senado} cores={state.cores} />
             )}
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -59,6 +73,32 @@ export default function App() {
 
         <Footer />
       </div>
+    </div>
+  );
+}
+
+function CargoNav({ view, setView, temSenado }) {
+  const items = [
+    { id: "pres", label: "Presidente" },
+    { id: "sen", label: "Senado", disabled: !temSenado },
+  ];
+  return (
+    <div className="flex gap-1 rounded-xl border border-hair bg-card p-1 w-fit shadow-sm">
+      {items.map((it) => (
+        <button
+          key={it.id}
+          disabled={it.disabled}
+          onClick={() => setView(it.id)}
+          title={it.disabled ? "Sem pesquisas de Senado no momento" : undefined}
+          className={`rounded-lg px-5 py-2 text-sm font-semibold transition-colors ${
+            view === it.id
+              ? "bg-petrol text-white shadow-sm"
+              : "text-texto hover:bg-bg"
+          } ${it.disabled ? "opacity-40 cursor-not-allowed" : ""}`}
+        >
+          {it.label}
+        </button>
+      ))}
     </div>
   );
 }

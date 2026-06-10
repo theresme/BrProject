@@ -120,8 +120,15 @@ class TseRegistry:
         terms = self._terms_for(poll.instituto)
         if not terms:
             return None
-        uf = "BR" if poll.race_id.startswith("presidente") else poll.race_id[-2:]
-        cargo = "presidente" if uf == "BR" else None
+        if poll.race_id.startswith("senador"):
+            uf = poll.race_id[-2:].upper()
+            cargo = "senador"
+        elif poll.race_id.startswith("presidente"):
+            uf = "BR"
+            cargo = "presidente"
+        else:
+            uf = poll.race_id[-2:].upper()
+            cargo = None
         best: tuple[int, dict] | None = None
         for row in self._rows:
             if cargo and cargo not in row["cargos"]:

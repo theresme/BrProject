@@ -34,6 +34,14 @@ TSE_CSV_ZIP_URL = os.getenv(
 )
 TSE_ENABLED: bool = os.getenv("TSE_ENABLED", "1") == "1"
 
+# Senado: descoberta automática de pesquisas por estado (páginas estaduais da
+# Wikipédia). Lista de UFs a sondar; quem não tiver seção de Senado é ignorado.
+SENADO_ENABLED: bool = os.getenv("SENADO_ENABLED", "1") == "1"
+SENADO_UFS: list[str] = os.getenv(
+    "SENADO_UFS",
+    "SP,RJ,MG,RS,PR,BA,PE,CE,GO,DF,SC,ES,PA,AM,MT,MS,MA,PB,RN,PI,AL,SE,RO,AC,AP,RR,TO",
+).split(",")
+
 # Pesquisas mudam em ritmo de dias, não segundos. 6h é mais que suficiente.
 POLL_INTERVAL_SECONDS: int = int(os.getenv("POLL_INTERVAL_SECONDS", str(6 * 3600)))
 
