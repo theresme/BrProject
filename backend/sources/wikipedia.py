@@ -29,21 +29,33 @@ log = logging.getLogger("fonte.wikipedia")
 MONTHS = {
     "jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
     "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12,
+    "abr": 4, "mai": 5, "ago": 8, "set": 9, "out": 10, "dez": 12,
 }
 
 # Colunas de metadados (não-candidato), por palavra-chave no cabeçalho.
 META_COLS = {
     "pollster": "instituto",
     "firm": "instituto",        # "Polling firm" — checar ANTES de "period"
+    "contratante": "instituto",
     "period": "periodo",
     "fieldwork": "periodo",
     "date": "periodo",
+    "data": "periodo",
     "margin": "margem",
+    "margem": "margem",
     "sample": "amostra",
+    "amostra": "amostra",
+    "amostragem": "amostra",
     "lead": "lead",
+    "vantagem": "lead",
     "source": "fonte",
     "ref": "fonte",
     "link": "fonte",
+    "cen.": "ignore",
+    "cenário": "ignore",
+    "cenario": "ignore",
+    "número de identificação": "ignore",
+    "numero de identificacao": "ignore",
 }
 
 
@@ -124,6 +136,39 @@ def parse_period(text: str, fallback_year: int) -> tuple[date | None, date | Non
         return None, None
     year_m = re.findall(r"(20\d\d)", t)
     year = int(year_m[-1]) if year_m else fallback_year
+
+    pt = re.sub(r"(\d{1,2})\s*[ºª]\.?", r"\1", t.lower())
+    mon_pt = r"([A-Za-zÀ-ÿ]+)"
+
+    def pt_month(name: str) -> int | None:
+        return MONTHS.get(name[:3].lower())
+
+    # "7 e 9 de junho de 2026" / "1 a 4 de março de 2026"
+    m = re.match(rf"^(\d{{1,2}})\s+(?:e|a|-)\s+(\d{{1,2}})\s+de\s+{mon_pt}\s+de\s+(20\d\d)$", pt)
+    if m:
+        mon = pt_month(m.group(3))
+        if mon:
+            y = int(m.group(4))
+            return date(y, mon, int(m.group(1))), date(y, mon, int(m.group(2)))
+
+    # "29 de abril - 03 de maio de 2026"
+    m = re.match(
+        rf"^(\d{{1,2}})\s+de\s+{mon_pt}\s*(?:-|a|e)\s*(\d{{1,2}})\s+de\s+{mon_pt}\s+de\s+(20\d\d)$",
+        pt,
+    )
+    if m:
+        mon1, mon2 = pt_month(m.group(2)), pt_month(m.group(4))
+        if mon1 and mon2:
+            y = int(m.group(5))
+            return date(y, mon1, int(m.group(1))), date(y, mon2, int(m.group(3)))
+
+    # "9 de junho de 2026"
+    m = re.match(rf"^(\d{{1,2}})\s+de\s+{mon_pt}\s+de\s+(20\d\d)$", pt)
+    if m:
+        mon = pt_month(m.group(2))
+        if mon:
+            d = date(int(m.group(3)), mon, int(m.group(1)))
+            return d, d
 
     def one(part: str, default_month: int | None = None) -> date | None:
         part = part.strip()

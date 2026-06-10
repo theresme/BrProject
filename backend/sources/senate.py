@@ -27,6 +27,8 @@ from .wikipedia import _collect_colors, _norm, parse_polls_table
 
 log = logging.getLogger("fonte.senado")
 
+PT_WIKIPEDIA_API = "https://pt.wikipedia.org/w/api.php"
+
 # Nome da UF na Wikipédia (para montar "2026 {Nome} general election").
 UF_NOMES: dict[str, str] = {
     "AC": "Acre", "AL": "Alagoas", "AP": "Amapá", "AM": "Amazonas",
@@ -37,6 +39,10 @@ UF_NOMES: dict[str, str] = {
     "RN": "Rio Grande do Norte", "RS": "Rio Grande do Sul", "RO": "Rondônia",
     "RR": "Roraima", "SC": "Santa Catarina", "SP": "São Paulo",
     "SE": "Sergipe", "TO": "Tocantins",
+}
+
+PT_POLLING_PAGES: dict[str, str] = {
+    "PR": "Pesquisas eleitorais para a eleição estadual de 2026 no Paraná",
 }
 
 
@@ -50,14 +56,14 @@ class SenateSource(Source):
             timeout=config.REQUEST_TIMEOUT,
         )
 
-    async def _api(self, **params) -> dict:
+    async def _api(self, api_url: str | None = None, **params) -> dict:
         params.setdefault("format", "json")
         params.setdefault("formatversion", "2")
         params.setdefault("redirects", "1")
         last_exc: Exception | None = None
         for attempt in range(config.RETRY_MAX):
             try:
-                r = await self._client.get(config.WIKIPEDIA_API, params=params)
+                r = await self._client.get(api_url or config.WIKIPEDIA_API, params=params)
                 r.raise_for_status()
                 return r.json()
             except Exception as exc:  # noqa: BLE001
@@ -89,6 +95,45 @@ class SenateSource(Source):
                 return title, int(s["index"])
         return None
 
+    async def _pt_senator_section_index(self, page: str) -> tuple[str, int] | None:
+        """Fallback ptwiki: acha a seção 'Senador' na página de pesquisas."""
+        data = await self._api(
+            PT_WIKIPEDIA_API, action="parse", page=page, prop="sections"
+        )
+        parse = data.get("parse")
+        if not parse:
+            return None
+        for s in parse["sections"]:
+            if re.fullmatch(r"senador", s["line"].strip(), re.IGNORECASE):
+                return parse["title"], int(s["index"])
+        return None
+
+    async def _fetch_ptwiki_uf(self, uf: str) -> list[Poll]:
+        page = PT_POLLING_PAGES.get(uf)
+        if not page:
+            return []
+        found = await self._pt_senator_section_index(page)
+        if not found:
+            return []
+        title, idx = found
+        data = await self._api(
+            PT_WIKIPEDIA_API, action="parse", page=title, prop="text", section=idx
+        )
+        html = data.get("parse", {}).get("text", "")
+        if not html:
+            return []
+        soup = BeautifulSoup(html, "lxml")
+        race_id = f"senador-{uf.lower()}"
+        polls: list[Poll] = []
+        for tbl in soup.find_all("table"):
+            if "wikitable" not in (tbl.get("class") or []):
+                continue
+            _collect_colors(tbl)
+            polls.extend(parse_polls_table(tbl, race_id, 2026))
+        if polls:
+            log.info("Senado %s (ptwiki): %d linhas de pesquisa", uf, len(polls))
+        return polls
+
     async def _fetch_uf(self, uf: str) -> list[Poll]:
         nome = UF_NOMES.get(uf, uf)
         page = f"2026 {nome} general election"
@@ -98,7 +143,11 @@ class SenateSource(Source):
             log.debug("Senado %s: erro resolvendo seção (%s)", uf, exc)
             return []
         if not found:
-            return []
+            try:
+                return await self._fetch_ptwiki_uf(uf)
+            except Exception as exc:  # noqa: BLE001
+                log.debug("Senado %s: erro no fallback ptwiki (%s)", uf, exc)
+                return []
         title, idx = found
         data = await self._api(action="parse", page=title, prop="text", section=idx)
         html = data.get("parse", {}).get("text", "")
