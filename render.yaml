@@ -1,0 +1,18 @@
+# Blueprint do Render — sobe um único web service em Docker.
+# Deploy: https://dashboard.render.com → New → Blueprint → conecte o repo
+# theresme/BrProject. O Render lê este arquivo e cria o serviço sozinho.
+services:
+  - type: web
+    name: brproject
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: SOURCE
+        value: wikipedia       # "mock" p/ rodar offline sem internet
+      - key: TSE_ENABLED
+        value: "1"
+      - key: POLL_INTERVAL_SECONDS
+        value: "21600"         # 6h — pesquisa muda em dias, não em segundos

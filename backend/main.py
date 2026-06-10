@@ -155,13 +155,15 @@ async def poll_once() -> None:
 
 async def poll_loop() -> None:
     while True:
-        await asyncio.sleep(config.POLL_INTERVAL_SECONDS)
         await poll_once()
+        await asyncio.sleep(config.POLL_INTERVAL_SECONDS)
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await poll_once()  # primeira carga imediata
+    # Não bloqueia o boot: o servidor sobe na hora (health check do Render
+    # passa imediato) e a primeira coleta roda em background. /api/state
+    # responde ready:false até os dados chegarem (~poucos segundos).
     task = asyncio.create_task(poll_loop())
     yield
     task.cancel()
