@@ -1,4 +1,4 @@
-export default function Header({ lastFetch, fonte, onRefresh, error }) {
+export default function Header({ lastFetch, onRefresh, error }) {
   return (
     <header>
       <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-petrol font-semibold">
@@ -12,7 +12,7 @@ export default function Header({ lastFetch, fonte, onRefresh, error }) {
         <div className="flex items-center gap-3 text-xs text-gray-500">
           {error && <span className="text-ambar">⚠ {error}</span>}
           <span>
-            fonte: <span className="text-texto font-medium">{fonte || "—"}</span>
+            Base: <span className="text-texto font-medium">pesquisas publicadas + registros TSE</span>
             {" · "}atualizado{" "}
             {lastFetch ? lastFetch.toLocaleTimeString("pt-BR") : "—"}
           </span>

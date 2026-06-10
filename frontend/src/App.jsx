@@ -25,7 +25,7 @@ export default function App() {
   return (
     <div className="min-h-full">
       <div className="mx-auto max-w-5xl px-4 py-8 sm:py-12">
-        <Header lastFetch={lastFetch} fonte={state?.fonte} onRefresh={refresh}
+        <Header lastFetch={lastFetch} onRefresh={refresh}
                 error={error && state ? error : null} />
 
         <Disclaimer />
