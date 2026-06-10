@@ -48,8 +48,8 @@ function Banda({ c }) {
 function BigCard({ c, destaque }) {
   return (
     <div
-      className={`rounded-xl border bg-bg/60 p-5 ${
-        destaque ? "border-2" : "border-hair"
+      className={`rounded-xl border bg-cardhi p-5 ${
+        destaque ? "border-2 shadow-card" : "border-hair"
       }`}
       style={destaque ? { borderColor: c.cor } : {}}
     >
@@ -83,7 +83,7 @@ function BigCard({ c, destaque }) {
 
 function SmallCard({ c }) {
   return (
-    <div className="rounded-lg border border-hair bg-bg/60 p-3">
+    <div className="rounded-lg border border-hair bg-cardhi p-3">
       <div className="flex items-center gap-1.5 text-sm text-petrol font-medium">
         <span className="h-2 w-2 rounded-full" style={{ background: c.cor }} />
         {c.nome}

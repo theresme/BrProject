@@ -89,19 +89,29 @@ DEFAULT_RACE_ID = "presidente-1t"
 # ---------------------------------------------------------------------------
 # Cores e normalização de candidatos
 # ---------------------------------------------------------------------------
-# Cores por candidato (fallback: paleta neutra em ordem de chegada).
+# Paleta curada por candidato — tons refinados (não os hex crus dos partidos,
+# que ficam berrantes em fundo claro). Casa por fragmento do nome e TEM
+# prioridade sobre a cor extraída da Wikipédia (ver _color_for em main.py).
 CANDIDATE_COLORS: dict[str, str] = {
-    "lula": "#e11d48",            # vermelho PT
-    "tarcisio": "#2563eb",        # azul
-    "tarcísio": "#2563eb",
-    "bolsonaro": "#1d4ed8",
-    "michelle": "#7c3aed",
-    "ratinho": "#0891b2",
-    "caiado": "#16a34a",
-    "zema": "#ea580c",
-    "gomes": "#b45309",           # Ciro
-    "marçal": "#9333ea",
-    "marcal": "#9333ea",
+    "lula": "#C0414E",            # vinho/carmim suave (PT) — não o vermelho puro
+    "haddad": "#C0414E",
+    "bolsonaro": "#2C6E9E",       # azul aço sóbrio (PL)
+    "tarcisio": "#3B6FB0",
+    "tarcísio": "#3B6FB0",
+    "freitas": "#3B6FB0",
+    "michelle": "#7E69C9",
+    "ratinho": "#0E9BA6",         # teal
+    "caiado": "#C98A3A",          # ocre
+    "leite": "#5AA7C7",
+    "zema": "#DC6B3C",            # laranja queimado
+    "gomes": "#A8783C",           # Ciro
+    "ciro": "#A8783C",
+    "santos": "#4C9E63",          # verde
+    "cury": "#8A73C9",            # lilás
+    "tebet": "#2FA56B",
+    "moro": "#3FA9D6",
+    "marçal": "#9B59B6",
+    "marcal": "#9B59B6",
 }
 
 FALLBACK_PALETTE: tuple[str, ...] = (

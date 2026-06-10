@@ -42,16 +42,17 @@ tse = TseRegistry()
 def _color_for(nome: str, taken: dict[str, str]) -> str:
     if nome in taken:
         return taken[nome]
+    # paleta curada vence a cor crua da Wikipédia (tons refinados p/ fundo claro)
+    k = nome.lower()
+    for frag, cor in config.CANDIDATE_COLORS.items():
+        if frag in k:
+            return cor
     try:
         from sources.wikipedia import PARSED_COLORS
         if nome in PARSED_COLORS:
             return PARSED_COLORS[nome]
     except ImportError:
         pass
-    k = nome.lower()
-    for frag, cor in config.CANDIDATE_COLORS.items():
-        if frag in k:
-            return cor
     return config.FALLBACK_PALETTE[len(taken) % len(config.FALLBACK_PALETTE)]
 
 
