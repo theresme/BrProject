@@ -100,6 +100,24 @@ def build_state(polls: list[Poll]) -> dict:
         block["turno"] = race.turno
         races[race.id] = block
 
+    # ---- Senado: descoberto dinamicamente (race_id "senador-{uf}") ----
+    senado: dict[str, dict] = {}
+    senate_ids = sorted({p.race_id for p in polls if p.race_id.startswith("senador-")})
+    for rid in senate_ids:
+        rp = [p for p in polls if p.race_id == rid]
+        block = aggregate_race(rp)
+        for c in block["candidatos"]:
+            colors[c["nome"]] = _color_for(c["nome"], colors)
+            c["cor"] = colors[c["nome"]]
+            c.pop("pLiderHoje", None)  # 2 vagas: "liderar" não é o que importa
+        rp_sorted = sorted(rp, key=lambda p: p.data_fim, reverse=True)
+        block["pesquisas"] = [_poll_row(p) for p in rp_sorted[:60]]
+        uf = rid.split("-")[-1].upper()
+        block["cargo"] = "Senador"
+        block["uf"] = uf
+        block["vagas"] = 2  # 2026 renova 2/3: 2 cadeiras por estado
+        senado[uf] = block
+
     institutos = sorted(
         {p.instituto for p in polls},
         key=lambda i: -config.institute_rating(i),
@@ -118,6 +136,7 @@ def build_state(polls: list[Poll]) -> dict:
         "fonte": config.SOURCE,
         "cores": colors,
         "races": races,
+        "senado": senado,
         "defaultRace": config.DEFAULT_RACE_ID,
         "pesos": pesos,
         "tseCarregado": tse.loaded,
@@ -135,6 +154,13 @@ async def poll_once() -> None:
     source = get_source(config.SOURCE)
     try:
         polls = await source.fetch()
+        # Senado é por estado (fonte separada); só com a fonte real
+        if config.SENADO_ENABLED and config.SOURCE == "wikipedia":
+            try:
+                from sources.senate import SenateSource
+                polls += await SenateSource(config.SENADO_UFS).fetch()
+            except Exception as exc:  # noqa: BLE001
+                log.warning("Senado indisponível (seguindo só com presidente): %s", exc)
         if config.TSE_ENABLED and config.SOURCE != "mock" and tse.stale:
             try:
                 await tse.load()

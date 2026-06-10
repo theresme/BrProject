@@ -5,3 +5,4 @@ node_modules/
 backend/static/
 dist/
 .DS_Store
+backend/_smoke_*.py
