@@ -10,7 +10,7 @@ export default function ModelCards({ race }) {
 
   return (
     <div>
-      <div className="text-xs uppercase tracking-widest text-gray-500 font-semibold">
+      <div className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
         Média do modelo hoje · {race.nPesquisas} pesquisas no histórico
       </div>
 
@@ -39,7 +39,7 @@ function fmtChance(p) {
 
 function Banda({ c }) {
   return (
-    <span className="text-xs text-gray-500">
+    <span className="text-xs text-gray-400">
       banda {pct(c.banda[0])} – {pct(c.banda[1])}
     </span>
   );
@@ -48,16 +48,16 @@ function Banda({ c }) {
 function BigCard({ c, destaque }) {
   return (
     <div
-      className={`rounded-xl border bg-panel/70 p-5 ${
+      className={`rounded-xl border bg-bg/60 p-5 ${
         destaque ? "border-2" : "border-hair"
       }`}
       style={destaque ? { borderColor: c.cor } : {}}
     >
       <div className="flex items-center gap-2">
         <span className="h-3 w-3 rounded-full" style={{ background: c.cor }} />
-        <span className="font-semibold text-gray-100">{c.nome}</span>
+        <span className="font-semibold text-petrol">{c.nome}</span>
         {destaque && (
-          <span className="ml-auto rounded-full bg-white/10 px-2 py-0.5 text-[11px] uppercase tracking-wide text-gray-300">
+          <span className="ml-auto rounded-full bg-petrol/10 px-2 py-0.5 text-[11px] uppercase tracking-wide text-petrol">
             lidera a média
           </span>
         )}
@@ -68,12 +68,12 @@ function BigCard({ c, destaque }) {
       <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
         <Banda c={c} />
         {"pLiderHoje" in c && (
-          <span className="text-xs text-gray-400">
+          <span className="text-xs text-texto font-medium">
             {fmtChance(c.pLiderHoje)} de chance de liderar hoje
           </span>
         )}
       </div>
-      <div className="mt-3 text-xs text-gray-500">
+      <div className="mt-3 text-xs text-gray-400">
         última pesquisa: {c.ultimaPesquisa.instituto} ({dataBr(c.ultimaPesquisa.data)}) —{" "}
         {pct(c.ultimaPesquisa.pct)}
       </div>
@@ -83,12 +83,12 @@ function BigCard({ c, destaque }) {
 
 function SmallCard({ c }) {
   return (
-    <div className="rounded-lg border border-hair bg-panel/50 p-3">
-      <div className="flex items-center gap-1.5 text-sm text-gray-200">
+    <div className="rounded-lg border border-hair bg-bg/60 p-3">
+      <div className="flex items-center gap-1.5 text-sm text-petrol font-medium">
         <span className="h-2 w-2 rounded-full" style={{ background: c.cor }} />
         {c.nome}
       </div>
-      <div className="num mt-1 text-2xl font-bold text-gray-100">{pct(c.media)}</div>
+      <div className="num mt-1 text-2xl font-bold text-petrol">{pct(c.media)}</div>
       <Banda c={c} />
     </div>
   );

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html,
@@ -14,11 +14,11 @@ body,
 
 body {
   margin: 0;
-  /* halo verde-bandeira sutil descendo do topo */
+  /* halo petróleo bem sutil descendo do topo */
   background:
-    radial-gradient(70% 24rem at 50% 0%, rgba(0, 151, 57, 0.10), transparent 70%),
-    theme("colors.ink");
-  color: #e9f0e9;
+    radial-gradient(70% 24rem at 50% 0%, rgba(15, 76, 92, 0.06), transparent 70%),
+    theme("colors.bg");
+  color: theme("colors.texto");
   font-family: theme("fontFamily.sans");
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -38,28 +38,28 @@ body {
   animation: fade-in 0.5s ease both;
 }
 
-/* glow editorial atrás do hero: verde e amarelo bem sutis */
+/* glow editorial atrás do hero: petróleo e azul bem sutis */
 .hero-glow::before {
   content: "";
   position: absolute;
   inset: -40%;
   pointer-events: none;
   background:
-    radial-gradient(38% 42% at 28% 30%, rgba(0, 151, 57, 0.12), transparent 70%),
-    radial-gradient(38% 42% at 72% 30%, rgba(254, 221, 0, 0.06), transparent 70%);
+    radial-gradient(38% 42% at 24% 24%, rgba(15, 76, 92, 0.06), transparent 70%),
+    radial-gradient(38% 42% at 76% 28%, rgba(78, 165, 217, 0.08), transparent 70%);
 }
 
-/* scrollbar discreta no tema escuro */
+/* scrollbar discreta no tema claro */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #27402c transparent;
+  scrollbar-color: #cbd5e1 transparent;
 }
 *::-webkit-scrollbar {
   width: 9px;
   height: 9px;
 }
 *::-webkit-scrollbar-thumb {
-  background: #27402c;
+  background: #cbd5e1;
   border-radius: 9px;
 }
 *::-webkit-scrollbar-track {
@@ -67,5 +67,5 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 151, 57, 0.45);
+  background: rgba(78, 165, 217, 0.3);
 }

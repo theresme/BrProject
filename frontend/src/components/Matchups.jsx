@@ -24,29 +24,29 @@ function MatchupCard({ m }) {
   const wA = (a.media / total) * 100;
 
   return (
-    <div className="rounded-xl border border-hair bg-panel/60 p-4">
+    <div className="rounded-xl border border-hair bg-card shadow-card p-4">
       <div className="flex items-center justify-between text-sm">
         <Nome c={a} bold />
-        <span className="text-[11px] text-gray-500">
+        <span className="text-[11px] text-gray-400">
           {m.nPesquisas} pesquisas · até {dataBr(m.maisRecente)}
         </span>
         <Nome c={b} right />
       </div>
 
       <div className="mt-3 flex h-7 overflow-hidden rounded-md">
-        <div className="flex items-center pl-2 text-xs font-bold text-white/90"
+        <div className="flex items-center pl-2 text-xs font-bold text-white/95"
              style={{ width: `${wA}%`, background: a.cor }}>
           {pct(a.media)}
         </div>
-        <div className="flex items-center justify-end pr-2 text-xs font-bold text-white/90"
+        <div className="flex items-center justify-end pr-2 text-xs font-bold text-white/95"
              style={{ width: `${100 - wA}%`, background: b.cor }}>
           {pct(b.media)}
         </div>
       </div>
 
-      <div className="mt-2 flex justify-between text-[11px] text-gray-500">
+      <div className="mt-2 flex justify-between text-[11px] text-gray-400">
         <span>banda {pct(a.banda[0])}–{pct(a.banda[1])}</span>
-        <span>vantagem {pct(a.media - b.media)}</span>
+        <span className="font-medium text-texto">vantagem {pct(a.media - b.media)}</span>
         <span>banda {pct(b.banda[0])}–{pct(b.banda[1])}</span>
       </div>
     </div>
@@ -57,7 +57,7 @@ function Nome({ c, bold, right }) {
   return (
     <span className={`flex items-center gap-1.5 ${right ? "flex-row-reverse" : ""}`}>
       <span className="h-2.5 w-2.5 rounded-full" style={{ background: c.cor }} />
-      <span className={`${bold ? "font-bold" : "font-semibold"} text-gray-100`}>
+      <span className={`${bold ? "font-bold" : "font-semibold"} text-petrol`}>
         {c.nome}
       </span>
     </span>

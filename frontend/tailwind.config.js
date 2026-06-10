@@ -4,18 +4,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        // identidade Brasil: verde-bandeira como acento editorial
-        brasil: "#009739",
-        brasildark: "#00672a",
-        amarelo: "#FEDD00",
-        ink: "#0a120c", // fundo escuro com tinta verde (não preto puro)
-        panel: "#121c14",
-        panel2: "#1a261c",
-        hair: "#27402c",
+        // paleta institucional clara
+        petrol: "#0F4C5C", // azul petróleo — títulos, números, ações
+        petroldark: "#0A3742",
+        azul: "#4EA5D9", // azul claro — acento secundário
+        azuldark: "#2F86B8",
+        ambar: "#F59E0B", // destaque
+        texto: "#4B5563", // cinza texto
+        bg: "#F5F7FA", // fundo da página
+        card: "#FFFFFF", // superfícies
+        hair: "#E3E8EF", // bordas finas
       },
       fontFamily: {
         display: ['"Georgia"', "ui-serif", "serif"],
         sans: ['"Inter"', "system-ui", "sans-serif"],
+      },
+      boxShadow: {
+        card: "0 1px 2px rgba(15,76,92,0.04), 0 4px 16px rgba(15,76,92,0.05)",
       },
     },
   },

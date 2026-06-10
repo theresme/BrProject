@@ -22,7 +22,7 @@ export default function TrendChart({ race, cores }) {
   const xTicks = monthTicks(t0, t1);
 
   return (
-    <section className="rounded-2xl border border-hair bg-panel/60 p-4 sm:p-6">
+    <section className="rounded-2xl border border-hair bg-card shadow-card p-4 sm:p-6">
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="text-sm font-semibold uppercase tracking-widest text-gray-400">
           Tendência — linha é o modelo, pontos são pesquisas
@@ -37,14 +37,15 @@ export default function TrendChart({ race, cores }) {
           {yTicks.map((v) => (
             <g key={v}>
               <line x1={PAD.l} x2={W - PAD.r} y1={y(v)} y2={y(v)}
-                    stroke="#27402c" strokeWidth="1" strokeDasharray={v ? "2 4" : ""} />
+                    stroke={v ? "#E3E8EF" : "#cbd5e1"} strokeWidth="1"
+                    strokeDasharray={v ? "2 4" : ""} />
               <text x={PAD.l - 8} y={y(v) + 4} textAnchor="end"
-                    className="fill-gray-500" fontSize="11">{v}%</text>
+                    fill="#9ca3af" fontSize="11">{v}%</text>
             </g>
           ))}
           {xTicks.map(({ t, label }) => (
             <text key={t} x={x(t)} y={H - 8} textAnchor="middle"
-                  className="fill-gray-500" fontSize="11">{label}</text>
+                  fill="#9ca3af" fontSize="11">{label}</text>
           ))}
 
           {/* pontos: cada pesquisa individual */}
@@ -52,7 +53,7 @@ export default function TrendChart({ race, cores }) {
             <circle
               key={i}
               cx={x(d.t)} cy={y(d.v)} r={hover?.dot === i ? 4.5 : 3}
-              fill={d.cor} opacity={hover?.dot === i ? 1 : 0.30}
+              fill={d.cor} opacity={hover?.dot === i ? 1 : 0.38}
               onMouseEnter={() => setHover({ dot: i })}
             />
           ))}
@@ -88,11 +89,11 @@ function Tooltip({ d, x, y }) {
   return (
     <g pointerEvents="none">
       <rect x={tx} y={ty} width="185" height="40" rx="6"
-            fill="#0a120c" stroke="#27402c" />
-      <text x={tx + 8} y={ty + 16} fontSize="11" fill="#e9f0e9" fontWeight="600">
+            fill="#ffffff" stroke="#cbd5e1" />
+      <text x={tx + 8} y={ty + 16} fontSize="11" fill="#0F4C5C" fontWeight="700">
         {d.nome} — {pct(d.v)}
       </text>
-      <text x={tx + 8} y={ty + 31} fontSize="10" fill="#9ca3af">
+      <text x={tx + 8} y={ty + 31} fontSize="10" fill="#6b7280">
         {d.instituto} · {dataBr(d.data)}
       </text>
     </g>

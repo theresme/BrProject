@@ -35,7 +35,7 @@ export default function App() {
 
             {turno === 1 && race1 && (
               <>
-                <section className="hero-glow relative overflow-hidden rounded-2xl bg-gradient-to-b from-panel to-ink border border-hair border-t-2 border-t-brasil/70 p-6 sm:p-8">
+                <section className="hero-glow relative overflow-hidden rounded-2xl bg-card border border-hair border-t-[3px] border-t-petrol shadow-card p-6 sm:p-8">
                   <ModelCards race={race1} />
                 </section>
                 <TrendChart race={race1} cores={state.cores} />
@@ -77,8 +77,8 @@ function TurnoTabs({ turno, setTurno, race2 }) {
           onClick={() => setTurno(t.id)}
           className={`rounded-lg px-4 py-2 text-sm font-semibold border transition-colors ${
             turno === t.id
-              ? "bg-brasil/20 border-brasil/60 text-emerald-200"
-              : "bg-panel border-hair text-gray-400 hover:bg-panel2"
+              ? "bg-petrol border-petrol text-white shadow-sm"
+              : "bg-card border-hair text-texto hover:bg-bg"
           } ${t.disabled ? "opacity-40 cursor-not-allowed" : ""}`}
         >
           {t.label}
@@ -90,8 +90,8 @@ function TurnoTabs({ turno, setTurno, race2 }) {
 
 function LoadingState() {
   return (
-    <div className="mt-16 flex flex-col items-center text-gray-500">
-      <div className="h-10 w-10 rounded-full border-2 border-hair border-t-gray-400 animate-spin" />
+    <div className="mt-16 flex flex-col items-center text-gray-400">
+      <div className="h-10 w-10 rounded-full border-2 border-hair border-t-petrol animate-spin" />
       <p className="mt-4 text-sm">Carregando pesquisas…</p>
     </div>
   );
@@ -101,11 +101,11 @@ function ErrorState({ error, onRetry }) {
   return (
     <div className="mt-16 flex flex-col items-center text-center">
       <div className="text-4xl mb-3">⚠️</div>
-      <p className="text-gray-300 font-semibold">Não foi possível carregar os dados</p>
+      <p className="text-petrol font-semibold">Não foi possível carregar os dados</p>
       <p className="text-sm text-gray-500 mt-1 max-w-md">{error || "tente novamente"}</p>
       <button
         onClick={onRetry}
-        className="mt-4 rounded-lg border border-hair bg-panel px-4 py-2 text-sm text-gray-200 hover:bg-panel2"
+        className="mt-4 rounded-lg border border-hair bg-card px-4 py-2 text-sm text-texto hover:bg-bg"
       >
         Tentar de novo
       </button>
