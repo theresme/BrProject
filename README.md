@@ -56,6 +56,22 @@ npm run dev        # http://localhost:5173  (proxy /api -> :8000)
 **Produção:** `npm run build` gera direto em `backend/static/`, que o FastAPI
 serve sozinho (um processo só).
 
+## Deploy (Render)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/theresme/BrProject)
+
+O repositório já traz `Dockerfile` (build do front + runtime do backend num
+container só) e `render.yaml` (Blueprint). Para publicar:
+
+1. Acesse [dashboard.render.com](https://dashboard.render.com) → **New → Blueprint**.
+2. Conecte o repositório `theresme/BrProject`.
+3. O Render lê o `render.yaml`, cria o web service (plano free, Docker) e faz o
+   deploy. Health check em `/api/health`; `autoDeploy` liga a cada push na `main`.
+
+> Plano free hiberna após ~15 min sem acesso e demora alguns segundos para
+> "acordar". O boot não bloqueia: o site abre na hora e mostra "carregando…"
+> até a primeira coleta terminar.
+
 ## O modelo (resumo)
 
 Tudo em `backend/config.py` (`ModelConfig` + `INSTITUTE_RATINGS`):
