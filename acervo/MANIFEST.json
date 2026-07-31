@@ -7,7 +7,7 @@
       "fonte": "Internet Archive (Fonte A) / digitalização Bayerische Staatsbibliothek",
       "item": "le-menagier-de-paris-tome-01-bsb",
       "origem": "https://archive.org/download/le-menagier-de-paris-tome-01-bsb/Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome I..pdf",
-      "registrado_em": "2026-07-31T05:30:41+00:00",
+      "registrado_em": "2026-07-31T05:51:45+00:00",
       "sha256": "5316314a3312c6ed2467559ffebb7ffe68043b841d20a624c68635cc29019d5a"
     },
     "menagier/menagier-t2.pdf": {
@@ -17,15 +17,23 @@
       "fonte": "Internet Archive (Fonte A) / digitalização Bayerische Staatsbibliothek",
       "item": "le-menagier-de-paris-tome-02-bsb",
       "origem": "https://archive.org/download/le-menagier-de-paris-tome-02-bsb/Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome II..pdf",
-      "registrado_em": "2026-07-31T05:30:45+00:00",
+      "registrado_em": "2026-07-31T05:51:45+00:00",
       "sha256": "dc758ac315d2d2d1d3a5b14a82a62a96c94356d293028284d4fff1aafcbf0b66"
+    },
+    "menagier/menagier-traducao-pt.pdf": {
+      "bytes": 86696,
+      "escopo": "antologia bilíngue (prólogo, plano da obra, uma receita)",
+      "fonte": "tradução a partir da transcrição do Project Gutenberg",
+      "origem": "menagier/raw/gutenberg-44070.txt",
+      "registrado_em": "2026-07-31T05:52:01+00:00",
+      "sha256": "3a71801e4703161342de5822c9531dee565488c7bf3b4ce40c94dbb5afd76675"
     },
     "menagier/raw/gutenberg-44070.txt": {
       "bytes": 1436848,
       "fonte": "Project Gutenberg (Fonte C) — transcrição, não fac-símile",
       "nota": "texto dos dois volumes; usado como base da tradução",
       "origem": "https://www.gutenberg.org/files/44070/44070-0.txt",
-      "registrado_em": "2026-07-31T05:30:46+00:00",
+      "registrado_em": "2026-07-31T05:51:45+00:00",
       "sha256": "1fd556300f994e3b382369bdd9fd88fbf2e351fe636a2d5bfabeb574de849cfb"
     },
     "yojokun/hentaigana-tabela.pdf": {
@@ -33,7 +41,7 @@
       "fonte": "Universidade Nakamura Gakuen (Fonte B) — arquivo Kaibara Ekiken",
       "nota": "tabela de variantes de kana; chave para ler o original xilogravado",
       "origem": "https://www.nakamura-u.ac.jp/institute/media/library/kaibara/pdf/a_kana.pdf",
-      "registrado_em": "2026-07-31T05:40:50+00:00",
+      "registrado_em": "2026-07-31T05:52:00+00:00",
       "sha256": "3aeb2c375179590d01755f50c954df24d8b9bd541b20fa3fa69dc7f4f9f1692f"
     },
     "yojokun/yojokun-shotoku.pdf": {
@@ -41,7 +49,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — 8 volumes consolidados",
       "origem": "https://www.digital.archives.go.jp/file/1236669",
       "paginas": 234,
-      "registrado_em": "2026-07-31T05:40:49+00:00",
+      "registrado_em": "2026-07-31T05:52:00+00:00",
       "sha256": "9b699d3de33bbd008130c37d36005570fed169e5f727989be6659ebe193a3b15",
       "volumes": 8
     },
@@ -50,7 +58,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4318676/manifest.json",
       "paginas": 34,
-      "registrado_em": "2026-07-31T05:37:49+00:00",
+      "registrado_em": "2026-07-31T05:51:48+00:00",
       "rotulo": "養生訓１",
       "sha256": "5e6031c4476412197d2b3d06376971b62fa2e563c7615c06c37c4b37bc2173f5",
       "volume": 1
@@ -60,7 +68,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4318677/manifest.json",
       "paginas": 34,
-      "registrado_em": "2026-07-31T05:37:49+00:00",
+      "registrado_em": "2026-07-31T05:51:50+00:00",
       "rotulo": "養生訓２",
       "sha256": "f6483fbcdabc53752d3607bec816b464b4362b7edbbf83404665c738f03fe161",
       "volume": 2
@@ -70,7 +78,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4319506/manifest.json",
       "paginas": 26,
-      "registrado_em": "2026-07-31T05:37:50+00:00",
+      "registrado_em": "2026-07-31T05:51:52+00:00",
       "rotulo": "養生訓３",
       "sha256": "6c00df4a6a7054d6c1a94ac8a8ead6a0cfab535be89ba50b63efea82b2dd3354",
       "volume": 3
@@ -80,7 +88,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4319507/manifest.json",
       "paginas": 28,
-      "registrado_em": "2026-07-31T05:37:52+00:00",
+      "registrado_em": "2026-07-31T05:51:53+00:00",
       "rotulo": "養生訓４",
       "sha256": "f61fba2eeff0adf64fc9b50378917302ad2f73b01f58bbe84bbc69d2f0a47c16",
       "volume": 4
@@ -90,7 +98,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4319508/manifest.json",
       "paginas": 24,
-      "registrado_em": "2026-07-31T05:38:29+00:00",
+      "registrado_em": "2026-07-31T05:51:55+00:00",
       "rotulo": "養生訓５",
       "sha256": "0b97c199a6058110473668626eb2a1292fc83fb421d89b50db130a04c5472352",
       "volume": 5
@@ -100,7 +108,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4299674/manifest.json",
       "paginas": 32,
-      "registrado_em": "2026-07-31T05:39:23+00:00",
+      "registrado_em": "2026-07-31T05:51:57+00:00",
       "rotulo": "養生訓６",
       "sha256": "0b203fb2e2bb7ae138030c3b655901c29822a7f69935d8fc41b5de8bf52aa760",
       "volume": 6
@@ -110,7 +118,7 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4299675/manifest.json",
       "paginas": 32,
-      "registrado_em": "2026-07-31T05:40:09+00:00",
+      "registrado_em": "2026-07-31T05:51:59+00:00",
       "rotulo": "養生訓７",
       "sha256": "6fb78bb16ae377f52dc8e60461e0935eaf0a28b89743dfc06b4d47d442d8b21f",
       "volume": 7
@@ -120,13 +128,18 @@
       "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
       "origem": "https://www.digital.archives.go.jp/api/iiif/4319510/manifest.json",
       "paginas": 24,
-      "registrado_em": "2026-07-31T05:40:46+00:00",
+      "registrado_em": "2026-07-31T05:52:00+00:00",
       "rotulo": "養生訓８",
       "sha256": "c11b10cba58d237c50284847c4bb90875d76feaa390810ac8f1e75fac8262854",
       "volume": 8
     }
   },
-  "gerado_em": "2026-07-31T05:41:09+00:00",
+  "gerado_em": "2026-07-31T05:52:06+00:00",
+  "traducao_yojokun": {
+    "desbloqueio": "havendo transcrição, ela entra em archiver/data/ e o mesmo pipeline bilíngue a monta",
+    "estado": "bloqueado",
+    "motivo": "o fac-símile é xilogravura em kuzushiji/hentaigana (1713) e não há camada de texto; não existe transcrição em domínio público (o catálogo do Aozora Bunko, 19.497 obras, não traz 養生訓 nem 貝原益軒); a leitura exigiria OCR de kuzushiji (KuroNet/miwo), indisponível offline"
+  },
   "verificacao": [
     {
       "arquivo": "menagier/menagier-t1.pdf",
@@ -151,6 +164,17 @@
       "problemas": [],
       "ultima_desvio": 22.5,
       "ultima_png": "_verificacao/menagier-t2-ultima.png"
+    },
+    {
+      "arquivo": "menagier/menagier-traducao-pt.pdf",
+      "bytes": 86696,
+      "ok": true,
+      "paginas": 6,
+      "primeira_desvio": 28.56,
+      "primeira_png": "_verificacao/menagier-traducao-pt-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 13.06,
+      "ultima_png": "_verificacao/menagier-traducao-pt-ultima.png"
     },
     {
       "arquivo": "yojokun/hentaigana-tabela.pdf",

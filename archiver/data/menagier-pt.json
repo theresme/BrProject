@@ -1,0 +1,91 @@
+{
+  "obra": "Le Ménagier de Paris",
+  "edicao_fonte": "Project Gutenberg #44070, transcrição da ed. Jérôme Pichon (Paris, 1846)",
+  "lingua_fonte": "francês médio (c. 1393)",
+  "escopo": "antologia — prólogo, plano da obra e uma receita da segunda distinção",
+  "nota": "<b>Sobre esta edição.</b> O Ménagier de Paris é um manual de moral e economia doméstica escrito por volta de 1393 por um burguês parisiense de idade avançada para a esposa de quinze anos com quem acabara de casar. Ficou conhecido sobretudo pela segunda distinção, que é uma das mais completas coleções de receitas da cozinha medieval francesa.<br/><br/><b>O que está aqui.</b> Esta é uma <i>antologia bilíngue</i>, não a obra completa. O original tem cerca de 225 mil palavras; foram traduzidos e revisados aqui o prólogo do autor, o plano geral da obra com os nove artigos da primeira distinção, e a receita de sopa de ervilhas que abre os potages comuns. A obra completa, em fac-símile, está nos arquivos <i>menagier-t1.pdf</i> (351 páginas) e <i>menagier-t2.pdf</i> (397 páginas), baixados do Internet Archive.<br/><br/><b>Procedência do texto à esquerda.</b> Cada parágrafo em francês médio é recortado automaticamente, por âncora textual, do arquivo <i>acervo/menagier/raw/gutenberg-44070.txt</i>, cujo sha256 está registrado no MANIFEST.json. Nada foi redigitado: se a fonte mudar, o recorte falha em vez de divergir em silêncio. Foram removidos apenas as chamadas de nota da edição de 1846 e a marcação de itálico da transcrição.<br/><br/><b>Sobre a tradução.</b> É francês médio, não francês moderno, e os falsos amigos invertem o sentido quando tratados como se fossem: <i>amer</i> é amar e não amargo, <i>aucun</i> é algum e não nenhum, <i>mary</i> é marido. Tradutores automáticos genéricos erram exatamente nesses pontos. Optou-se por manter os períodos longos e o tratamento na segunda pessoa do plural do original, em vez de modernizar para prosa curta — o texto é um marido idoso instruindo uma adolescente, e o registro faz parte do documento.<br/><br/>Domínio público: obra de c. 1393, edição de 1846, transcrição do Project Gutenberg.",
+  "secoes": [
+    {
+      "id": "prologo",
+      "titulo": "Prólogo do autor",
+      "trechos": [
+        {
+          "inicio": "Chère seur, pour ce que vous estant en l’aage de quinze ans",
+          "fim": "selon ma voulenté, si comme vous disiez."
+        },
+        {
+          "inicio": "Si ay tenu à grant bien",
+          "fim": "et m’a bien pleu et plaira."
+        },
+        {
+          "inicio": "Car vostre jeunesse vous excuse",
+          "fim": "ne afférant à vostre estat, ne au mien."
+        },
+        {
+          "inicio": "Et quant au service que vous dictes",
+          "fim": "mais de ce vous gaittiez."
+        },
+        {
+          "inicio": "Car jasoit-ce, belle seur",
+          "fim": "je suis tout asseuré de vostre bien."
+        },
+        {
+          "inicio": "Et toutesvoies, jasoit-ce, comme j’ay dit",
+          "fim": "et autres entour qui vous aurez esté nourrie."
+        },
+        {
+          "inicio": "Et pour vostre onneur et amour",
+          "fim": "dix-neuf articles principalment."
+        }
+      ],
+      "paragrafos": [
+        "Cara irmã, como vós, estando na idade de quinze anos e na semana em que vós e eu fomos desposados, me rogastes que eu poupasse a vossa juventude e o vosso pequeno e inexperiente serviço até que tivésseis visto e aprendido mais; e para esse aprendizado me prometíeis atender cuidadosamente e pôr todo o vosso zelo e diligência em guardar a minha paz e o meu amor, conforme dizíeis muito ajuizadamente, por conselho mais sábio — bem o creio — do que o vosso, rogando-me humildemente em nosso leito, como bem me lembro, que, pelo amor de Deus, eu não vos quisesse corrigir asperamente diante de gente estranha, nem tampouco diante da nossa gente, mas que vos corrigisse cada noite, ou de dia em dia, em nosso quarto, e vos lembrasse os desacertos ou as simplezas do dia ou dos dias passados, e vos repreendesse se assim me aprouvesse; e que então não deixaríeis de vos emendar segundo a minha doutrina e correção, e faríeis todo o vosso possível segundo a minha vontade, conforme dizíeis.",
+        "Tive isso por muito bom, e vos louvo e vos agradeço o que a esse respeito me dissestes, e desde então muitas vezes me lembrei disso. E sabei quanto a isso, cara irmã, que tudo quanto sei que fizestes desde que nos casamos até agora, e tudo quanto fizerdes com boa intenção, me foi e me é bom, e me apraz, e muito me agradou e há de agradar.",
+        "Pois a vossa juventude vos escusa de já serdes muito ajuizada, e ainda vos escusará em todas as coisas que fizerdes com intenção de fazer bem e sem desgosto meu. E sabei que não tomo desgosto, mas prazer, em que vos ocupeis de cultivar roseiras, de cuidar de violetas, de fazer grinaldas, e também no vosso dançar e no vosso cantar; e bem quero que o continueis entre os nossos amigos e os nossos iguais, pois não há senão bem e honestidade em passar assim a idade da vossa adolescência feminina — contanto, porém, que não desejeis nem vos ofereçais a frequentar festas nem danças de senhores grandes demais, pois isso não vos convém, nem condiz com o vosso estado, nem com o meu.",
+        "E quanto ao serviço que dizeis que de bom grado me faríeis maior do que fazeis, se soubésseis fazê-lo e se eu vo-lo ensinasse, sabei, cara irmã, que bem me basta que me presteis o mesmo serviço que as vossas boas vizinhas prestam aos maridos que são iguais a nós e do nosso estado, e que as vossas parentas prestam aos maridos de estado igual ao nosso. Aconselhai-vos, pois, com elas em particular e, depois do conselho delas, fazei mais ou menos, segundo a vossa vontade. Pois não sou tão presunçoso, pelo que sinto de vós e da vossa bondade, que aquilo que fizerdes não me baste de sobra — e assim também em todos os demais serviços; contanto que neles não haja fraude, menosprezo ou desdém: disso, sim, guardai-vos.",
+        "Pois ainda que, bela irmã, eu bem reconheça que sois de linhagem mais alta do que a minha, isso não vos poria a salvo; porque, por Deus, as mulheres da vossa linhagem são tão boas que, sem mim e por elas mesmas, seríeis asperamente corrigida se o viessem a saber por mim ou de outro modo. Mas de vós não tenho dúvida alguma: estou de todo seguro da vossa bondade.",
+        "E todavia, ainda que, como disse, a mim caiba apenas um pouco de serviço, bem quisera eu que soubésseis do bem, da honra e do serviço em grande abundância e fartura, e mais do que a mim compete — seja para servir outro marido, se o tiverdes depois de mim, seja para dar maior ensinamento às vossas filhas, amigas ou outras, se vos aprouver e delas tiverem necessidade. E quanto mais souberdes, tanto mais honra tereis, e tanto mais louvados serão por isso os vossos parentes, e eu também, e os demais em cuja companhia tiverdes sido criada.",
+        "E pela vossa honra e pelo vosso amor, e não para me servirdes (pois a mim não convém senão o serviço comum, e ainda assim o mínimo), tendo piedosa e caridosa compaixão de vós, que há muito tempo não tendes pai nem mãe, nem aqui nenhuma das vossas parentas junto de vós, nem a quem, nas vossas necessidades íntimas, possais recorrer ou pedir conselho senão a mim somente, por quem fostes tirada da vossa parentela e da terra em que nascestes — pensei muitas vezes, e em vários intervalos, se poderia ou saberia achar por mim mesmo alguma introdução geral e leve para vos ensinar, e pela qual, sem me dar tal encargo como acima se disse, pudésseis vós mesma instruir-vos com o vosso esforço e trabalho. E afinal me parece que, se a vossa disposição for tal como me destes a entender pelas vossas boas palavras, isso se pode cumprir desta maneira: a saber, que uma lição geral vos será por mim escrita e entregue, repartida em três distinções, contendo dezenove artigos principalmente."
+      ]
+    },
+    {
+      "id": "plano-da-obra",
+      "titulo": "A primeira distinção e seus nove artigos",
+      "trechos": [
+        {
+          "inicio": "La première distinction d’icelles trois",
+          "fim": "dame Jehanne la Quintine."
+        }
+      ],
+      "paragrafos": [
+        "A primeira destas três distinções é necessária para adquirir o amor de Deus e a salvação da vossa alma, e igualmente necessária para adquirir o amor do vosso marido e vos dar neste mundo a paz que se deve ter no matrimônio. E porque estas duas coisas — a saber, a salvação da alma e a paz com o marido — são as duas coisas mais principalmente necessárias que existem, por isso foram postas aqui em primeiro lugar. E esta primeira distinção contém nove artigos.",
+        "O primeiro artigo trata de saudar e agradecer a Nosso Senhor e à sua bendita mãe ao despertardes e ao vos levantardes, e de vos arranjardes convenientemente.",
+        "O segundo artigo é de vos fazerdes acompanhar convenientemente, ir à igreja, escolher lugar, portar-vos com discrição, ouvir missa e vos confessardes.",
+        "O terceiro artigo é que ameis a Deus e à sua bendita mãe, e continuamente os sirvais, e vos ponhais e vos mantenhais na graça deles.",
+        "O quarto artigo é que guardeis continência e vivais castamente, a exemplo de Susana, Lucrécia e outras.",
+        "O quinto artigo, que sejais amorosa para com o vosso marido (seja eu, seja outro), a exemplo de Sara, Rebeca e Raquel.",
+        "O sexto artigo, que lhe sejais humilde e obediente, a exemplo de Griselidis, daquela que não quis salvar o marido de morrer afogado, e da Mãe de Deus, que respondeu fiat, etc.; de Lúcifer, do poço, do bailio de Tournai, dos religiosos e dos casados, de madame d’Andresel, de Chaumont, da Romana.",
+        "O sétimo, que sejais atenta e cuidadosa da pessoa dele.",
+        "O oitavo, que sejais calada, para encobrir os segredos dele, a exemplo de Papírio, daquela que pôs oito ovos, daquela de Veneza, daquela que voltou de Santiago, e do advogado.",
+        "O nono e último artigo é que, se o vosso marido se puser a desatinar, ou desatine, vós, sem aspereza, mas docemente, com discrição e humildade, o desvieis disso, como Melibeia e dona Joana la Quintine."
+      ]
+    },
+    {
+      "id": "potage-de-pois-vielz",
+      "titulo": "Da segunda distinção: sopa de ervilhas velhas",
+      "trechos": [
+        {
+          "inicio": "Et primò POTAGE DE POIS VIELZ.",
+          "fim": "l’en les doit jaunir de saffran broyé dont l’eaue soit mise boulir avec les pois et le saffran avec la purée."
+        }
+      ],
+      "paragrafos": [
+        "E primeiramente, SOPA DE ERVILHAS VELHAS. — Convém escolhê-las e informar-se com a gente do lugar sobre a natureza das ervilhas daquele lugar (pois comumente as ervilhas não cozinham bem em água de poço; e em alguns lugares cozinham bem em água de fonte e em água de rio, como em Paris, e em outros lugares não cozinham de modo algum em água de fonte, como em Béziers). E, sabido isso, convém lavá-las numa bacia com água morna, depois pô-las numa panela, com água morna, ao fogo, e fazê-las ferver até que estejam entreabertas. Depois escorrer o caldo e pô-lo à parte; em seguida encher de água morna a panela das ervilhas e levá-la ao fogo e escorrê-las uma segunda vez, quem quiser ter caldo mais abundante; e então repô-las sem água, pois elas soltarão bastante e nela ferverão. E não convém meter a colher dentro da panela depois que estiverem escorridas, mas sacudir juntas a panela e as ervilhas, e pouco a pouco alimentá-las com água morna, ou mais quente que morna, e não com água fria; e fazê-las ferver e cozinhar por inteiro antes que lhes ponhas qualquer coisa que não seja água quente, seja da carne, seja outra. E não lhes ponhas sal, nem toucinho, nem tempero algum, até que estejam todas cozidas. Água de toucinho bem lhes podes pôr, e água de carne; mas não se deve pôr sal, nem meter a colher, até que estejam bem cozidas — todavia, bem se pode mexê-las sacudindo a panela inteira.",
+        "Em dia de carne, deve-se, depois de escorridas, alimentá-las com a água do toucinho e da carne; e quando estiverem quase cozidas, pode-se pôr o toucinho dentro. E quando se tira o toucinho dessas ervilhas, deve-se lavá-lo com a água da carne, para que fique mais bonito de pôr em fatias sobre a carne, e para que não apareça sujo de ervilha.",
+        "Em dia de peixe, quando as ervilhas estiverem cozidas, deve-se ter cebolas que tenham cozido tanto quanto as ervilhas numa panela, e o toucinho em outra panela; e assim como com a água do toucinho se alimentam e se servem as ervilhas, do mesmo modo, em dia de peixe, quando se puseram as ervilhas ao fogo numa panela, devem-se pôr à parte as cebolas picadas em outra panela, e servir-se da água das cebolas, pondo-a dentro das ervilhas ao alimentá-las; e quando tudo isso estiver cozido, fritar as cebolas e pôr metade delas nas ervilhas e a outra metade no caldo de que se falará adiante, e então pôr o sal. E se nesse dia de peixe, ou na quaresma, houver toucinho de baleia, deve-se fazer com o toucinho de baleia como se faz com o toucinho em dia de carne.",
+        "Quanto às ervilhas novas, algumas vezes são cozidas em dia de carne, com água de carne e salsa moída, para fazer sopa verde — e isso é em dia de carne; e em dia de peixe cozinham-se no leite, com gengibre e açafrão dentro; e algumas vezes à cretonada, de que se falará adiante.",
+        "De todas essas ervilhas, sejam velhas, sejam novas, pode-se fazer purê passando-as por peneira de pano, estamenha ou saco; mas as ervilhas velhas devem-se amarelar com açafrão moído, cuja água se põe a ferver com as ervilhas, e o açafrão com o caldo."
+      ]
+    }
+  ]
+}
