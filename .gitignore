@@ -6,3 +6,10 @@ backend/static/
 dist/
 .DS_Store
 backend/_smoke_*.py
+
+# Acervo de domínio público: os binários (~555 MB) ficam fora do git.
+# O que é versionado é a receita (archiver/), o MANIFEST.json e o download.log,
+# que juntos permitem reconstruir o acervo bit a bit.
+acervo/**/raw/
+acervo/**/*.pdf
+acervo/_verificacao/

@@ -1,0 +1,275 @@
+{
+  "artefatos": {
+    "menagier/menagier-t1.pdf": {
+      "arquivo_original": "Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome I..pdf",
+      "bytes": 12011311,
+      "edicao": "Pichon, 1846",
+      "fonte": "Internet Archive (Fonte A) / digitalização Bayerische Staatsbibliothek",
+      "item": "le-menagier-de-paris-tome-01-bsb",
+      "origem": "https://archive.org/download/le-menagier-de-paris-tome-01-bsb/Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome I..pdf",
+      "registrado_em": "2026-07-31T05:30:41+00:00",
+      "sha256": "5316314a3312c6ed2467559ffebb7ffe68043b841d20a624c68635cc29019d5a"
+    },
+    "menagier/menagier-t2.pdf": {
+      "arquivo_original": "Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome II..pdf",
+      "bytes": 17303860,
+      "edicao": "Pichon, 1846",
+      "fonte": "Internet Archive (Fonte A) / digitalização Bayerische Staatsbibliothek",
+      "item": "le-menagier-de-paris-tome-02-bsb",
+      "origem": "https://archive.org/download/le-menagier-de-paris-tome-02-bsb/Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome II..pdf",
+      "registrado_em": "2026-07-31T05:30:45+00:00",
+      "sha256": "dc758ac315d2d2d1d3a5b14a82a62a96c94356d293028284d4fff1aafcbf0b66"
+    },
+    "menagier/raw/gutenberg-44070.txt": {
+      "bytes": 1436848,
+      "fonte": "Project Gutenberg (Fonte C) — transcrição, não fac-símile",
+      "nota": "texto dos dois volumes; usado como base da tradução",
+      "origem": "https://www.gutenberg.org/files/44070/44070-0.txt",
+      "registrado_em": "2026-07-31T05:30:46+00:00",
+      "sha256": "1fd556300f994e3b382369bdd9fd88fbf2e351fe636a2d5bfabeb574de849cfb"
+    },
+    "yojokun/hentaigana-tabela.pdf": {
+      "bytes": 58055,
+      "fonte": "Universidade Nakamura Gakuen (Fonte B) — arquivo Kaibara Ekiken",
+      "nota": "tabela de variantes de kana; chave para ler o original xilogravado",
+      "origem": "https://www.nakamura-u.ac.jp/institute/media/library/kaibara/pdf/a_kana.pdf",
+      "registrado_em": "2026-07-31T05:40:50+00:00",
+      "sha256": "3aeb2c375179590d01755f50c954df24d8b9bd541b20fa3fa69dc7f4f9f1692f"
+    },
+    "yojokun/yojokun-shotoku.pdf": {
+      "bytes": 171159581,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — 8 volumes consolidados",
+      "origem": "https://www.digital.archives.go.jp/file/1236669",
+      "paginas": 234,
+      "registrado_em": "2026-07-31T05:40:49+00:00",
+      "sha256": "9b699d3de33bbd008130c37d36005570fed169e5f727989be6659ebe193a3b15",
+      "volumes": 8
+    },
+    "yojokun/yojokun-vol01.pdf": {
+      "bytes": 25046463,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4318676/manifest.json",
+      "paginas": 34,
+      "registrado_em": "2026-07-31T05:37:49+00:00",
+      "rotulo": "養生訓１",
+      "sha256": "5e6031c4476412197d2b3d06376971b62fa2e563c7615c06c37c4b37bc2173f5",
+      "volume": 1
+    },
+    "yojokun/yojokun-vol02.pdf": {
+      "bytes": 24400831,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4318677/manifest.json",
+      "paginas": 34,
+      "registrado_em": "2026-07-31T05:37:49+00:00",
+      "rotulo": "養生訓２",
+      "sha256": "f6483fbcdabc53752d3607bec816b464b4362b7edbbf83404665c738f03fe161",
+      "volume": 2
+    },
+    "yojokun/yojokun-vol03.pdf": {
+      "bytes": 19024424,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4319506/manifest.json",
+      "paginas": 26,
+      "registrado_em": "2026-07-31T05:37:50+00:00",
+      "rotulo": "養生訓３",
+      "sha256": "6c00df4a6a7054d6c1a94ac8a8ead6a0cfab535be89ba50b63efea82b2dd3354",
+      "volume": 3
+    },
+    "yojokun/yojokun-vol04.pdf": {
+      "bytes": 20573513,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4319507/manifest.json",
+      "paginas": 28,
+      "registrado_em": "2026-07-31T05:37:52+00:00",
+      "rotulo": "養生訓４",
+      "sha256": "f61fba2eeff0adf64fc9b50378917302ad2f73b01f58bbe84bbc69d2f0a47c16",
+      "volume": 4
+    },
+    "yojokun/yojokun-vol05.pdf": {
+      "bytes": 17159551,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4319508/manifest.json",
+      "paginas": 24,
+      "registrado_em": "2026-07-31T05:38:29+00:00",
+      "rotulo": "養生訓５",
+      "sha256": "0b97c199a6058110473668626eb2a1292fc83fb421d89b50db130a04c5472352",
+      "volume": 5
+    },
+    "yojokun/yojokun-vol06.pdf": {
+      "bytes": 23575189,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4299674/manifest.json",
+      "paginas": 32,
+      "registrado_em": "2026-07-31T05:39:23+00:00",
+      "rotulo": "養生訓６",
+      "sha256": "0b203fb2e2bb7ae138030c3b655901c29822a7f69935d8fc41b5de8bf52aa760",
+      "volume": 6
+    },
+    "yojokun/yojokun-vol07.pdf": {
+      "bytes": 23662100,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4299675/manifest.json",
+      "paginas": 32,
+      "registrado_em": "2026-07-31T05:40:09+00:00",
+      "rotulo": "養生訓７",
+      "sha256": "6fb78bb16ae377f52dc8e60461e0935eaf0a28b89743dfc06b4d47d442d8b21f",
+      "volume": 7
+    },
+    "yojokun/yojokun-vol08.pdf": {
+      "bytes": 17722781,
+      "fonte": "Arquivo Nacional do Japão (Fonte A) — Naikaku Bunko, metadados CC0",
+      "origem": "https://www.digital.archives.go.jp/api/iiif/4319510/manifest.json",
+      "paginas": 24,
+      "registrado_em": "2026-07-31T05:40:46+00:00",
+      "rotulo": "養生訓８",
+      "sha256": "c11b10cba58d237c50284847c4bb90875d76feaa390810ac8f1e75fac8262854",
+      "volume": 8
+    }
+  },
+  "gerado_em": "2026-07-31T05:41:09+00:00",
+  "verificacao": [
+    {
+      "arquivo": "menagier/menagier-t1.pdf",
+      "bytes": 12011311,
+      "bytes_por_pagina": 34220,
+      "ok": true,
+      "paginas": 351,
+      "primeira_desvio": 26.51,
+      "primeira_png": "_verificacao/menagier-t1-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 24.84,
+      "ultima_png": "_verificacao/menagier-t1-ultima.png"
+    },
+    {
+      "arquivo": "menagier/menagier-t2.pdf",
+      "bytes": 17303860,
+      "bytes_por_pagina": 43587,
+      "ok": true,
+      "paginas": 397,
+      "primeira_desvio": 26.52,
+      "primeira_png": "_verificacao/menagier-t2-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 22.5,
+      "ultima_png": "_verificacao/menagier-t2-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/hentaigana-tabela.pdf",
+      "bytes": 58055,
+      "ok": true,
+      "paginas": 1,
+      "primeira_desvio": 68.5,
+      "primeira_png": "_verificacao/hentaigana-tabela-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 68.5,
+      "ultima_png": "_verificacao/hentaigana-tabela-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-shotoku.pdf",
+      "bytes": 171159581,
+      "bytes_por_pagina": 731451,
+      "ok": true,
+      "paginas": 234,
+      "primeira_desvio": 58.27,
+      "primeira_png": "_verificacao/yojokun-shotoku-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 51.06,
+      "ultima_png": "_verificacao/yojokun-shotoku-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol01.pdf",
+      "bytes": 25046463,
+      "bytes_por_pagina": 736661,
+      "ok": true,
+      "paginas": 34,
+      "primeira_desvio": 58.27,
+      "primeira_png": "_verificacao/yojokun-vol01-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 51.91,
+      "ultima_png": "_verificacao/yojokun-vol01-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol02.pdf",
+      "bytes": 24400831,
+      "bytes_por_pagina": 717672,
+      "ok": true,
+      "paginas": 34,
+      "primeira_desvio": 57.35,
+      "primeira_png": "_verificacao/yojokun-vol02-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 50.85,
+      "ultima_png": "_verificacao/yojokun-vol02-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol03.pdf",
+      "bytes": 19024424,
+      "bytes_por_pagina": 731709,
+      "ok": true,
+      "paginas": 26,
+      "primeira_desvio": 57.06,
+      "primeira_png": "_verificacao/yojokun-vol03-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 45.35,
+      "ultima_png": "_verificacao/yojokun-vol03-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol04.pdf",
+      "bytes": 20573513,
+      "bytes_por_pagina": 734768,
+      "ok": true,
+      "paginas": 28,
+      "primeira_desvio": 58.05,
+      "primeira_png": "_verificacao/yojokun-vol04-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 50.6,
+      "ultima_png": "_verificacao/yojokun-vol04-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol05.pdf",
+      "bytes": 17159551,
+      "bytes_por_pagina": 714981,
+      "ok": true,
+      "paginas": 24,
+      "primeira_desvio": 57.08,
+      "primeira_png": "_verificacao/yojokun-vol05-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 49.57,
+      "ultima_png": "_verificacao/yojokun-vol05-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol06.pdf",
+      "bytes": 23575189,
+      "bytes_por_pagina": 736725,
+      "ok": true,
+      "paginas": 32,
+      "primeira_desvio": 57.27,
+      "primeira_png": "_verificacao/yojokun-vol06-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 44.75,
+      "ultima_png": "_verificacao/yojokun-vol06-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol07.pdf",
+      "bytes": 23662100,
+      "bytes_por_pagina": 739441,
+      "ok": true,
+      "paginas": 32,
+      "primeira_desvio": 57.07,
+      "primeira_png": "_verificacao/yojokun-vol07-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 45.72,
+      "ultima_png": "_verificacao/yojokun-vol07-ultima.png"
+    },
+    {
+      "arquivo": "yojokun/yojokun-vol08.pdf",
+      "bytes": 17722781,
+      "bytes_por_pagina": 738449,
+      "ok": true,
+      "paginas": 24,
+      "primeira_desvio": 56.64,
+      "primeira_png": "_verificacao/yojokun-vol08-primeira.png",
+      "problemas": [],
+      "ultima_desvio": 51.06,
+      "ultima_png": "_verificacao/yojokun-vol08-ultima.png"
+    }
+  ]
+}

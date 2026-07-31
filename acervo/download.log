@@ -1,0 +1,483 @@
+2026-07-31 05:30:37,444Z INFO == Ménagier: menagier-t1.pdf (le-menagier-de-paris-tome-01-bsb)
+2026-07-31 05:30:38,134Z INFO GET https://archive.org/metadata/le-menagier-de-paris-tome-01-bsb status=200 bytes=11199 (json)
+2026-07-31 05:30:40,978Z INFO GET https://archive.org/download/le-menagier-de-paris-tome-01-bsb/Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome I..pdf status=200 bytes=12011311 -> acervo/menagier/raw/le-menagier-de-paris-tome-01-bsb.pdf [2026-07-31T05:30:40+00:00]
+2026-07-31 05:30:41,117Z INFO MANIFEST menagier/menagier-t1.pdf (12011311 bytes)
+2026-07-31 05:30:41,117Z INFO == Ménagier: menagier-t2.pdf (le-menagier-de-paris-tome-02-bsb)
+2026-07-31 05:30:41,276Z INFO GET https://archive.org/metadata/le-menagier-de-paris-tome-02-bsb status=200 bytes=11013 (json)
+2026-07-31 05:30:45,511Z INFO GET https://archive.org/download/le-menagier-de-paris-tome-02-bsb/Le Ménagier de Paris. Traité de morale et d'économie domestique composé vers 1393, par un bourgeois parisien. Tome II..pdf status=200 bytes=17303860 -> acervo/menagier/raw/le-menagier-de-paris-tome-02-bsb.pdf [2026-07-31T05:30:45+00:00]
+2026-07-31 05:30:45,728Z INFO MANIFEST menagier/menagier-t2.pdf (17303860 bytes)
+2026-07-31 05:30:46,599Z INFO GET https://www.gutenberg.org/files/44070/44070-0.txt status=200 bytes=1436848 -> acervo/menagier/raw/gutenberg-44070.txt [2026-07-31T05:30:46+00:00]
+2026-07-31 05:30:46,604Z INFO MANIFEST menagier/raw/gutenberg-44070.txt (1436848 bytes)
+2026-07-31 05:30:46,604Z INFO ============================================================
+2026-07-31 05:30:46,605Z INFO Sem falhas.
+2026-07-31 05:30:55,036Z INFO == Yōjōkun volume 1 (item 4318676)
+2026-07-31 05:30:56,504Z INFO GET https://www.digital.archives.go.jp/api/iiif/4318676/manifest.json status=200 bytes=31648 (json)
+2026-07-31 05:30:56,504Z INFO    養生訓１: 34 páginas
+2026-07-31 05:30:58,133Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581721500/iiif/M2017053011323548364_0001.jp2/full/max/0/native.jpg status=200 bytes=723033 -> acervo/yojokun/raw/vol01/0001.jpg [2026-07-31T05:30:58+00:00]
+2026-07-31 05:30:59,362Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581721600/iiif/M2017053011323548364_0002.jp2/full/max/0/native.jpg status=200 bytes=564115 -> acervo/yojokun/raw/vol01/0002.jpg [2026-07-31T05:30:59+00:00]
+2026-07-31 05:31:01,122Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581721700/iiif/M2017053011323548364_0003.jp2/full/max/0/native.jpg status=200 bytes=650181 -> acervo/yojokun/raw/vol01/0003.jpg [2026-07-31T05:31:01+00:00]
+2026-07-31 05:31:02,879Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581721800/iiif/M2017053011323548364_0004.jp2/full/max/0/native.jpg status=200 bytes=749809 -> acervo/yojokun/raw/vol01/0004.jpg [2026-07-31T05:31:02+00:00]
+2026-07-31 05:31:04,633Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581721900/iiif/M2017053011323548364_0005.jp2/full/max/0/native.jpg status=200 bytes=754626 -> acervo/yojokun/raw/vol01/0005.jpg [2026-07-31T05:31:04+00:00]
+2026-07-31 05:31:05,611Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722000/iiif/M2017053011323548364_0006.jp2/full/max/0/native.jpg status=200 bytes=767889 -> acervo/yojokun/raw/vol01/0006.jpg [2026-07-31T05:31:05+00:00]
+2026-07-31 05:31:06,554Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722100/iiif/M2017053011323548364_0007.jp2/full/max/0/native.jpg status=200 bytes=748124 -> acervo/yojokun/raw/vol01/0007.jpg [2026-07-31T05:31:06+00:00]
+2026-07-31 05:31:08,413Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722200/iiif/M2017053011323548364_0008.jp2/full/max/0/native.jpg status=200 bytes=760021 -> acervo/yojokun/raw/vol01/0008.jpg [2026-07-31T05:31:08+00:00]
+2026-07-31 05:31:09,264Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722300/iiif/M2017053011323548364_0009.jp2/full/max/0/native.jpg status=200 bytes=765877 -> acervo/yojokun/raw/vol01/0009.jpg [2026-07-31T05:31:09+00:00]
+2026-07-31 05:31:10,281Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722400/iiif/M2017053011323548364_0010.jp2/full/max/0/native.jpg status=200 bytes=760794 -> acervo/yojokun/raw/vol01/0010.jpg [2026-07-31T05:31:10+00:00]
+2026-07-31 05:31:11,317Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722500/iiif/M2017053011323548364_0011.jp2/full/max/0/native.jpg status=200 bytes=765448 -> acervo/yojokun/raw/vol01/0011.jpg [2026-07-31T05:31:11+00:00]
+2026-07-31 05:31:13,187Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722600/iiif/M2017053011323548364_0012.jp2/full/max/0/native.jpg status=200 bytes=771749 -> acervo/yojokun/raw/vol01/0012.jpg [2026-07-31T05:31:13+00:00]
+2026-07-31 05:31:14,295Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722700/iiif/M2017053011323548364_0013.jp2/full/max/0/native.jpg status=200 bytes=776487 -> acervo/yojokun/raw/vol01/0013.jpg [2026-07-31T05:31:14+00:00]
+2026-07-31 05:31:16,079Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722800/iiif/M2017053011323548364_0014.jp2/full/max/0/native.jpg status=200 bytes=767431 -> acervo/yojokun/raw/vol01/0014.jpg [2026-07-31T05:31:16+00:00]
+2026-07-31 05:31:16,903Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581722900/iiif/M2017053011323548364_0015.jp2/full/max/0/native.jpg status=200 bytes=751044 -> acervo/yojokun/raw/vol01/0015.jpg [2026-07-31T05:31:16+00:00]
+2026-07-31 05:31:18,856Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723000/iiif/M2017053011323548364_0016.jp2/full/max/0/native.jpg status=200 bytes=760365 -> acervo/yojokun/raw/vol01/0016.jpg [2026-07-31T05:31:18+00:00]
+2026-07-31 05:31:19,735Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723100/iiif/M2017053011323548364_0017.jp2/full/max/0/native.jpg status=200 bytes=752901 -> acervo/yojokun/raw/vol01/0017.jpg [2026-07-31T05:31:19+00:00]
+2026-07-31 05:31:20,729Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723200/iiif/M2017053011323548364_0018.jp2/full/max/0/native.jpg status=200 bytes=757595 -> acervo/yojokun/raw/vol01/0018.jpg [2026-07-31T05:31:20+00:00]
+2026-07-31 05:31:21,817Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723300/iiif/M2017053011323548364_0019.jp2/full/max/0/native.jpg status=200 bytes=745705 -> acervo/yojokun/raw/vol01/0019.jpg [2026-07-31T05:31:21+00:00]
+2026-07-31 05:31:22,662Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723400/iiif/M2017053011323548364_0020.jp2/full/max/0/native.jpg status=200 bytes=751894 -> acervo/yojokun/raw/vol01/0020.jpg [2026-07-31T05:31:22+00:00]
+2026-07-31 05:31:24,655Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723500/iiif/M2017053011323548364_0021.jp2/full/max/0/native.jpg status=200 bytes=749525 -> acervo/yojokun/raw/vol01/0021.jpg [2026-07-31T05:31:24+00:00]
+2026-07-31 05:31:26,422Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723600/iiif/M2017053011323548364_0022.jp2/full/max/0/native.jpg status=200 bytes=739628 -> acervo/yojokun/raw/vol01/0022.jpg [2026-07-31T05:31:26+00:00]
+2026-07-31 05:31:28,158Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723700/iiif/M2017053011323548364_0023.jp2/full/max/0/native.jpg status=200 bytes=741253 -> acervo/yojokun/raw/vol01/0023.jpg [2026-07-31T05:31:28+00:00]
+2026-07-31 05:31:29,190Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723800/iiif/M2017053011323548364_0024.jp2/full/max/0/native.jpg status=200 bytes=756740 -> acervo/yojokun/raw/vol01/0024.jpg [2026-07-31T05:31:29+00:00]
+2026-07-31 05:31:30,878Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581723900/iiif/M2017053011323548364_0025.jp2/full/max/0/native.jpg status=200 bytes=759003 -> acervo/yojokun/raw/vol01/0025.jpg [2026-07-31T05:31:30+00:00]
+2026-07-31 05:31:31,831Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724000/iiif/M2017053011323548364_0026.jp2/full/max/0/native.jpg status=200 bytes=759628 -> acervo/yojokun/raw/vol01/0026.jpg [2026-07-31T05:31:31+00:00]
+2026-07-31 05:31:33,758Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724100/iiif/M2017053011323548364_0027.jp2/full/max/0/native.jpg status=200 bytes=760973 -> acervo/yojokun/raw/vol01/0027.jpg [2026-07-31T05:31:33+00:00]
+2026-07-31 05:31:34,684Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724200/iiif/M2017053011323548364_0028.jp2/full/max/0/native.jpg status=200 bytes=775844 -> acervo/yojokun/raw/vol01/0028.jpg [2026-07-31T05:31:34+00:00]
+2026-07-31 05:31:36,852Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724300/iiif/M2017053011323548364_0029.jp2/full/max/0/native.jpg status=200 bytes=763727 -> acervo/yojokun/raw/vol01/0029.jpg [2026-07-31T05:31:36+00:00]
+2026-07-31 05:31:37,788Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724400/iiif/M2017053011323548364_0030.jp2/full/max/0/native.jpg status=200 bytes=761672 -> acervo/yojokun/raw/vol01/0030.jpg [2026-07-31T05:31:37+00:00]
+2026-07-31 05:31:39,647Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724500/iiif/M2017053011323548364_0031.jp2/full/max/0/native.jpg status=200 bytes=752897 -> acervo/yojokun/raw/vol01/0031.jpg [2026-07-31T05:31:39+00:00]
+2026-07-31 05:31:41,473Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724600/iiif/M2017053011323548364_0032.jp2/full/max/0/native.jpg status=200 bytes=703506 -> acervo/yojokun/raw/vol01/0032.jpg [2026-07-31T05:31:41+00:00]
+2026-07-31 05:31:42,340Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724700/iiif/M2017053011323548364_0033.jp2/full/max/0/native.jpg status=200 bytes=571345 -> acervo/yojokun/raw/vol01/0033.jpg [2026-07-31T05:31:42+00:00]
+2026-07-31 05:31:43,286Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724800/iiif/M2017053011323548364_0034.jp2/full/max/0/native.jpg status=200 bytes=587214 -> acervo/yojokun/raw/vol01/0034.jpg [2026-07-31T05:31:43+00:00]
+2026-07-31 05:31:46,391Z INFO PDF montado yojokun-vol01.pdf (34 páginas, 25046463 bytes)
+2026-07-31 05:31:46,457Z INFO MANIFEST yojokun/yojokun-vol01.pdf (25046463 bytes)
+2026-07-31 05:31:46,457Z INFO == Yōjōkun volume 2 (item 4318677)
+2026-07-31 05:31:47,311Z INFO GET https://www.digital.archives.go.jp/api/iiif/4318677/manifest.json status=200 bytes=31648 (json)
+2026-07-31 05:31:47,312Z INFO    養生訓２: 34 páginas
+2026-07-31 05:31:49,244Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581724900/iiif/M2017053011324148365_0001.jp2/full/max/0/native.jpg status=200 bytes=712959 -> acervo/yojokun/raw/vol02/0001.jpg [2026-07-31T05:31:49+00:00]
+2026-07-31 05:31:49,935Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725000/iiif/M2017053011324148365_0002.jp2/full/max/0/native.jpg status=200 bytes=555721 -> acervo/yojokun/raw/vol02/0002.jpg [2026-07-31T05:31:49+00:00]
+2026-07-31 05:31:51,863Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725100/iiif/M2017053011324148365_0003.jp2/full/max/0/native.jpg status=200 bytes=644047 -> acervo/yojokun/raw/vol02/0003.jpg [2026-07-31T05:31:51+00:00]
+2026-07-31 05:31:53,517Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725200/iiif/M2017053011324148365_0004.jp2/full/max/0/native.jpg status=200 bytes=748604 -> acervo/yojokun/raw/vol02/0004.jpg [2026-07-31T05:31:53+00:00]
+2026-07-31 05:31:55,246Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725300/iiif/M2017053011324148365_0005.jp2/full/max/0/native.jpg status=200 bytes=747590 -> acervo/yojokun/raw/vol02/0005.jpg [2026-07-31T05:31:55+00:00]
+2026-07-31 05:31:56,885Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725400/iiif/M2017053011324148365_0006.jp2/full/max/0/native.jpg status=200 bytes=735508 -> acervo/yojokun/raw/vol02/0006.jpg [2026-07-31T05:31:56+00:00]
+2026-07-31 05:31:57,680Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725500/iiif/M2017053011324148365_0007.jp2/full/max/0/native.jpg status=200 bytes=734932 -> acervo/yojokun/raw/vol02/0007.jpg [2026-07-31T05:31:57+00:00]
+2026-07-31 05:31:58,707Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725600/iiif/M2017053011324148365_0008.jp2/full/max/0/native.jpg status=200 bytes=733696 -> acervo/yojokun/raw/vol02/0008.jpg [2026-07-31T05:31:58+00:00]
+2026-07-31 05:32:00,585Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725700/iiif/M2017053011324148365_0009.jp2/full/max/0/native.jpg status=200 bytes=732573 -> acervo/yojokun/raw/vol02/0009.jpg [2026-07-31T05:32:00+00:00]
+2026-07-31 05:32:01,390Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725800/iiif/M2017053011324148365_0010.jp2/full/max/0/native.jpg status=200 bytes=730287 -> acervo/yojokun/raw/vol02/0010.jpg [2026-07-31T05:32:01+00:00]
+2026-07-31 05:32:02,310Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581725900/iiif/M2017053011324148365_0011.jp2/full/max/0/native.jpg status=200 bytes=725720 -> acervo/yojokun/raw/vol02/0011.jpg [2026-07-31T05:32:02+00:00]
+2026-07-31 05:32:03,309Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726000/iiif/M2017053011324148365_0012.jp2/full/max/0/native.jpg status=200 bytes=758067 -> acervo/yojokun/raw/vol02/0012.jpg [2026-07-31T05:32:03+00:00]
+2026-07-31 05:32:04,362Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726100/iiif/M2017053011324148365_0013.jp2/full/max/0/native.jpg status=200 bytes=753538 -> acervo/yojokun/raw/vol02/0013.jpg [2026-07-31T05:32:04+00:00]
+2026-07-31 05:32:06,279Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726200/iiif/M2017053011324148365_0014.jp2/full/max/0/native.jpg status=200 bytes=748518 -> acervo/yojokun/raw/vol02/0014.jpg [2026-07-31T05:32:06+00:00]
+2026-07-31 05:32:07,942Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726300/iiif/M2017053011324148365_0015.jp2/full/max/0/native.jpg status=200 bytes=752664 -> acervo/yojokun/raw/vol02/0015.jpg [2026-07-31T05:32:07+00:00]
+2026-07-31 05:32:08,621Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726400/iiif/M2017053011324148365_0016.jp2/full/max/0/native.jpg status=200 bytes=750915 -> acervo/yojokun/raw/vol02/0016.jpg [2026-07-31T05:32:08+00:00]
+2026-07-31 05:32:10,604Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726500/iiif/M2017053011324148365_0017.jp2/full/max/0/native.jpg status=200 bytes=747399 -> acervo/yojokun/raw/vol02/0017.jpg [2026-07-31T05:32:10+00:00]
+2026-07-31 05:32:11,426Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726600/iiif/M2017053011324148365_0018.jp2/full/max/0/native.jpg status=200 bytes=747032 -> acervo/yojokun/raw/vol02/0018.jpg [2026-07-31T05:32:11+00:00]
+2026-07-31 05:32:12,353Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726700/iiif/M2017053011324148365_0019.jp2/full/max/0/native.jpg status=200 bytes=736841 -> acervo/yojokun/raw/vol02/0019.jpg [2026-07-31T05:32:12+00:00]
+2026-07-31 05:32:13,362Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726800/iiif/M2017053011324148365_0020.jp2/full/max/0/native.jpg status=200 bytes=731671 -> acervo/yojokun/raw/vol02/0020.jpg [2026-07-31T05:32:13+00:00]
+2026-07-31 05:32:15,230Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581726900/iiif/M2017053011324148365_0021.jp2/full/max/0/native.jpg status=200 bytes=747679 -> acervo/yojokun/raw/vol02/0021.jpg [2026-07-31T05:32:15+00:00]
+2026-07-31 05:32:15,885Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727000/iiif/M2017053011324148365_0022.jp2/full/max/0/native.jpg status=200 bytes=458903 -> acervo/yojokun/raw/vol02/0022.jpg [2026-07-31T05:32:15+00:00]
+2026-07-31 05:32:17,869Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727100/iiif/M2017053011324148365_0023.jp2/full/max/0/native.jpg status=200 bytes=753749 -> acervo/yojokun/raw/vol02/0023.jpg [2026-07-31T05:32:17+00:00]
+2026-07-31 05:32:19,578Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727200/iiif/M2017053011324148365_0024.jp2/full/max/0/native.jpg status=200 bytes=747362 -> acervo/yojokun/raw/vol02/0024.jpg [2026-07-31T05:32:19+00:00]
+2026-07-31 05:32:21,413Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727300/iiif/M2017053011324148365_0025.jp2/full/max/0/native.jpg status=200 bytes=740052 -> acervo/yojokun/raw/vol02/0025.jpg [2026-07-31T05:32:21+00:00]
+2026-07-31 05:32:23,449Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727400/iiif/M2017053011324148365_0026.jp2/full/max/0/native.jpg status=200 bytes=738573 -> acervo/yojokun/raw/vol02/0026.jpg [2026-07-31T05:32:23+00:00]
+2026-07-31 05:32:25,243Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727500/iiif/M2017053011324148365_0027.jp2/full/max/0/native.jpg status=200 bytes=746964 -> acervo/yojokun/raw/vol02/0027.jpg [2026-07-31T05:32:25+00:00]
+2026-07-31 05:32:27,061Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727600/iiif/M2017053011324148365_0028.jp2/full/max/0/native.jpg status=200 bytes=745188 -> acervo/yojokun/raw/vol02/0028.jpg [2026-07-31T05:32:27+00:00]
+2026-07-31 05:32:29,862Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727700/iiif/M2017053011324148365_0029.jp2/full/max/0/native.jpg status=200 bytes=748322 -> acervo/yojokun/raw/vol02/0029.jpg [2026-07-31T05:32:29+00:00]
+2026-07-31 05:32:30,791Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727800/iiif/M2017053011324148365_0030.jp2/full/max/0/native.jpg status=200 bytes=761073 -> acervo/yojokun/raw/vol02/0030.jpg [2026-07-31T05:32:30+00:00]
+2026-07-31 05:32:32,633Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581727900/iiif/M2017053011324148365_0031.jp2/full/max/0/native.jpg status=200 bytes=774940 -> acervo/yojokun/raw/vol02/0031.jpg [2026-07-31T05:32:32+00:00]
+2026-07-31 05:32:33,518Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728000/iiif/M2017053011324148365_0032.jp2/full/max/0/native.jpg status=200 bytes=721400 -> acervo/yojokun/raw/vol02/0032.jpg [2026-07-31T05:32:33+00:00]
+2026-07-31 05:32:35,383Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728100/iiif/M2017053011324148365_0033.jp2/full/max/0/native.jpg status=200 bytes=586000 -> acervo/yojokun/raw/vol02/0033.jpg [2026-07-31T05:32:35+00:00]
+2026-07-31 05:32:37,242Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728200/iiif/M2017053011324148365_0034.jp2/full/max/0/native.jpg status=200 bytes=583919 -> acervo/yojokun/raw/vol02/0034.jpg [2026-07-31T05:32:37+00:00]
+2026-07-31 05:32:46,467Z INFO PDF montado yojokun-vol02.pdf (34 páginas, 24400831 bytes)
+2026-07-31 05:32:46,534Z INFO MANIFEST yojokun/yojokun-vol02.pdf (24400831 bytes)
+2026-07-31 05:32:46,534Z INFO == Yōjōkun volume 3 (item 4319506)
+2026-07-31 05:32:47,302Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319506/manifest.json status=200 bytes=24392 (json)
+2026-07-31 05:32:47,303Z INFO    養生訓３: 26 páginas
+2026-07-31 05:32:49,462Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728300/iiif/M2017053011324648367_0001.jp2/full/max/0/native.jpg status=200 bytes=717018 -> acervo/yojokun/raw/vol03/0001.jpg [2026-07-31T05:32:49+00:00]
+2026-07-31 05:32:51,263Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728400/iiif/M2017053011324648367_0002.jp2/full/max/0/native.jpg status=200 bytes=548564 -> acervo/yojokun/raw/vol03/0002.jpg [2026-07-31T05:32:51+00:00]
+2026-07-31 05:32:52,984Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728500/iiif/M2017053011324648367_0003.jp2/full/max/0/native.jpg status=200 bytes=674686 -> acervo/yojokun/raw/vol03/0003.jpg [2026-07-31T05:32:52+00:00]
+2026-07-31 05:32:54,786Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728600/iiif/M2017053011324648367_0004.jp2/full/max/0/native.jpg status=200 bytes=747853 -> acervo/yojokun/raw/vol03/0004.jpg [2026-07-31T05:32:54+00:00]
+2026-07-31 05:32:55,688Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728700/iiif/M2017053011324648367_0005.jp2/full/max/0/native.jpg status=200 bytes=759878 -> acervo/yojokun/raw/vol03/0005.jpg [2026-07-31T05:32:55+00:00]
+2026-07-31 05:32:57,542Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728800/iiif/M2017053011324648367_0006.jp2/full/max/0/native.jpg status=200 bytes=764186 -> acervo/yojokun/raw/vol03/0006.jpg [2026-07-31T05:32:57+00:00]
+2026-07-31 05:32:58,453Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581728900/iiif/M2017053011324648367_0007.jp2/full/max/0/native.jpg status=200 bytes=763645 -> acervo/yojokun/raw/vol03/0007.jpg [2026-07-31T05:32:58+00:00]
+2026-07-31 05:32:59,475Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729000/iiif/M2017053011324648367_0008.jp2/full/max/0/native.jpg status=200 bytes=753272 -> acervo/yojokun/raw/vol03/0008.jpg [2026-07-31T05:32:59+00:00]
+2026-07-31 05:33:01,356Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729100/iiif/M2017053011324648367_0009.jp2/full/max/0/native.jpg status=200 bytes=760784 -> acervo/yojokun/raw/vol03/0009.jpg [2026-07-31T05:33:01+00:00]
+2026-07-31 05:33:03,105Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729200/iiif/M2017053011324648367_0010.jp2/full/max/0/native.jpg status=200 bytes=767032 -> acervo/yojokun/raw/vol03/0010.jpg [2026-07-31T05:33:03+00:00]
+2026-07-31 05:33:04,023Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729300/iiif/M2017053011324648367_0011.jp2/full/max/0/native.jpg status=200 bytes=769513 -> acervo/yojokun/raw/vol03/0011.jpg [2026-07-31T05:33:04+00:00]
+2026-07-31 05:33:05,860Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729400/iiif/M2017053011324648367_0012.jp2/full/max/0/native.jpg status=200 bytes=760236 -> acervo/yojokun/raw/vol03/0012.jpg [2026-07-31T05:33:05+00:00]
+2026-07-31 05:33:06,723Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729500/iiif/M2017053011324648367_0013.jp2/full/max/0/native.jpg status=200 bytes=755448 -> acervo/yojokun/raw/vol03/0013.jpg [2026-07-31T05:33:06+00:00]
+2026-07-31 05:33:07,923Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729600/iiif/M2017053011324648367_0014.jp2/full/max/0/native.jpg status=200 bytes=745036 -> acervo/yojokun/raw/vol03/0014.jpg [2026-07-31T05:33:07+00:00]
+2026-07-31 05:33:09,752Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729700/iiif/M2017053011324648367_0015.jp2/full/max/0/native.jpg status=200 bytes=741397 -> acervo/yojokun/raw/vol03/0015.jpg [2026-07-31T05:33:09+00:00]
+2026-07-31 05:33:10,759Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729800/iiif/M2017053011324648367_0016.jp2/full/max/0/native.jpg status=200 bytes=752983 -> acervo/yojokun/raw/vol03/0016.jpg [2026-07-31T05:33:10+00:00]
+2026-07-31 05:33:12,588Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581729900/iiif/M2017053011324648367_0017.jp2/full/max/0/native.jpg status=200 bytes=764225 -> acervo/yojokun/raw/vol03/0017.jpg [2026-07-31T05:33:12+00:00]
+2026-07-31 05:33:13,486Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730000/iiif/M2017053011324648367_0018.jp2/full/max/0/native.jpg status=200 bytes=756626 -> acervo/yojokun/raw/vol03/0018.jpg [2026-07-31T05:33:13+00:00]
+2026-07-31 05:33:15,356Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730100/iiif/M2017053011324648367_0019.jp2/full/max/0/native.jpg status=200 bytes=759658 -> acervo/yojokun/raw/vol03/0019.jpg [2026-07-31T05:33:15+00:00]
+2026-07-31 05:33:16,332Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730200/iiif/M2017053011324648367_0020.jp2/full/max/0/native.jpg status=200 bytes=751753 -> acervo/yojokun/raw/vol03/0020.jpg [2026-07-31T05:33:16+00:00]
+2026-07-31 05:33:18,207Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730300/iiif/M2017053011324648367_0021.jp2/full/max/0/native.jpg status=200 bytes=736879 -> acervo/yojokun/raw/vol03/0021.jpg [2026-07-31T05:33:18+00:00]
+2026-07-31 05:33:19,132Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730400/iiif/M2017053011324648367_0022.jp2/full/max/0/native.jpg status=200 bytes=770751 -> acervo/yojokun/raw/vol03/0022.jpg [2026-07-31T05:33:19+00:00]
+2026-07-31 05:33:21,067Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730500/iiif/M2017053011324648367_0023.jp2/full/max/0/native.jpg status=200 bytes=760308 -> acervo/yojokun/raw/vol03/0023.jpg [2026-07-31T05:33:21+00:00]
+2026-07-31 05:33:22,811Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730600/iiif/M2017053011324648367_0024.jp2/full/max/0/native.jpg status=200 bytes=752207 -> acervo/yojokun/raw/vol03/0024.jpg [2026-07-31T05:33:22+00:00]
+2026-07-31 05:33:23,677Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730700/iiif/M2017053011324648367_0025.jp2/full/max/0/native.jpg status=200 bytes=604423 -> acervo/yojokun/raw/vol03/0025.jpg [2026-07-31T05:33:23+00:00]
+2026-07-31 05:33:28,069Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730800/iiif/M2017053011324648367_0026.jp2/full/max/0/native.jpg status=200 bytes=571793 -> acervo/yojokun/raw/vol03/0026.jpg [2026-07-31T05:33:28+00:00]
+2026-07-31 05:33:28,491Z INFO PDF montado yojokun-vol03.pdf (26 páginas, 19024424 bytes)
+2026-07-31 05:33:28,562Z INFO MANIFEST yojokun/yojokun-vol03.pdf (19024424 bytes)
+2026-07-31 05:33:28,562Z INFO == Yōjōkun volume 4 (item 4319507)
+2026-07-31 05:33:29,510Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319507/manifest.json status=200 bytes=26206 (json)
+2026-07-31 05:33:29,510Z INFO    養生訓４: 28 páginas
+2026-07-31 05:33:30,565Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581730900/iiif/M2017053011325248368_0001.jp2/full/max/0/native.jpg status=200 bytes=716175 -> acervo/yojokun/raw/vol04/0001.jpg [2026-07-31T05:33:30+00:00]
+2026-07-31 05:33:32,426Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731000/iiif/M2017053011325248368_0002.jp2/full/max/0/native.jpg status=200 bytes=550883 -> acervo/yojokun/raw/vol04/0002.jpg [2026-07-31T05:33:32+00:00]
+2026-07-31 05:33:34,268Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731100/iiif/M2017053011325248368_0003.jp2/full/max/0/native.jpg status=200 bytes=645229 -> acervo/yojokun/raw/vol04/0003.jpg [2026-07-31T05:33:34+00:00]
+2026-07-31 05:33:36,079Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731200/iiif/M2017053011325248368_0004.jp2/full/max/0/native.jpg status=200 bytes=757912 -> acervo/yojokun/raw/vol04/0004.jpg [2026-07-31T05:33:36+00:00]
+2026-07-31 05:33:37,859Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731300/iiif/M2017053011325248368_0005.jp2/full/max/0/native.jpg status=200 bytes=756943 -> acervo/yojokun/raw/vol04/0005.jpg [2026-07-31T05:33:37+00:00]
+2026-07-31 05:33:38,795Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731400/iiif/M2017053011325248368_0006.jp2/full/max/0/native.jpg status=200 bytes=758978 -> acervo/yojokun/raw/vol04/0006.jpg [2026-07-31T05:33:38+00:00]
+2026-07-31 05:33:40,627Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731500/iiif/M2017053011325248368_0007.jp2/full/max/0/native.jpg status=200 bytes=768831 -> acervo/yojokun/raw/vol04/0007.jpg [2026-07-31T05:33:40+00:00]
+2026-07-31 05:33:41,521Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731600/iiif/M2017053011325248368_0008.jp2/full/max/0/native.jpg status=200 bytes=774304 -> acervo/yojokun/raw/vol04/0008.jpg [2026-07-31T05:33:41+00:00]
+2026-07-31 05:33:43,415Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731700/iiif/M2017053011325248368_0009.jp2/full/max/0/native.jpg status=200 bytes=773714 -> acervo/yojokun/raw/vol04/0009.jpg [2026-07-31T05:33:43+00:00]
+2026-07-31 05:33:44,303Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731800/iiif/M2017053011325248368_0010.jp2/full/max/0/native.jpg status=200 bytes=752950 -> acervo/yojokun/raw/vol04/0010.jpg [2026-07-31T05:33:44+00:00]
+2026-07-31 05:33:45,247Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581731900/iiif/M2017053011325248368_0011.jp2/full/max/0/native.jpg status=200 bytes=774334 -> acervo/yojokun/raw/vol04/0011.jpg [2026-07-31T05:33:45+00:00]
+2026-07-31 05:33:47,252Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732000/iiif/M2017053011325248368_0012.jp2/full/max/0/native.jpg status=200 bytes=755765 -> acervo/yojokun/raw/vol04/0012.jpg [2026-07-31T05:33:47+00:00]
+2026-07-31 05:33:48,982Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732100/iiif/M2017053011325248368_0013.jp2/full/max/0/native.jpg status=200 bytes=807497 -> acervo/yojokun/raw/vol04/0013.jpg [2026-07-31T05:33:48+00:00]
+2026-07-31 05:33:50,767Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732200/iiif/M2017053011325248368_0014.jp2/full/max/0/native.jpg status=200 bytes=766004 -> acervo/yojokun/raw/vol04/0014.jpg [2026-07-31T05:33:50+00:00]
+2026-07-31 05:33:51,711Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732300/iiif/M2017053011325248368_0015.jp2/full/max/0/native.jpg status=200 bytes=750262 -> acervo/yojokun/raw/vol04/0015.jpg [2026-07-31T05:33:51+00:00]
+2026-07-31 05:33:53,587Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732400/iiif/M2017053011325248368_0016.jp2/full/max/0/native.jpg status=200 bytes=736981 -> acervo/yojokun/raw/vol04/0016.jpg [2026-07-31T05:33:53+00:00]
+2026-07-31 05:33:54,438Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732500/iiif/M2017053011325248368_0017.jp2/full/max/0/native.jpg status=200 bytes=759525 -> acervo/yojokun/raw/vol04/0017.jpg [2026-07-31T05:33:54+00:00]
+2026-07-31 05:33:56,414Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732600/iiif/M2017053011325248368_0018.jp2/full/max/0/native.jpg status=200 bytes=751239 -> acervo/yojokun/raw/vol04/0018.jpg [2026-07-31T05:33:56+00:00]
+2026-07-31 05:33:57,430Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732700/iiif/M2017053011325248368_0019.jp2/full/max/0/native.jpg status=200 bytes=765450 -> acervo/yojokun/raw/vol04/0019.jpg [2026-07-31T05:33:57+00:00]
+2026-07-31 05:33:58,388Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732800/iiif/M2017053011325248368_0020.jp2/full/max/0/native.jpg status=200 bytes=771436 -> acervo/yojokun/raw/vol04/0020.jpg [2026-07-31T05:33:58+00:00]
+2026-07-31 05:33:59,681Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581732900/iiif/M2017053011325248368_0021.jp2/full/max/0/native.jpg status=200 bytes=760179 -> acervo/yojokun/raw/vol04/0021.jpg [2026-07-31T05:33:59+00:00]
+2026-07-31 05:34:00,655Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733000/iiif/M2017053011325248368_0022.jp2/full/max/0/native.jpg status=200 bytes=761214 -> acervo/yojokun/raw/vol04/0022.jpg [2026-07-31T05:34:00+00:00]
+2026-07-31 05:34:01,474Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733100/iiif/M2017053011325248368_0023.jp2/full/max/0/native.jpg status=200 bytes=759858 -> acervo/yojokun/raw/vol04/0023.jpg [2026-07-31T05:34:01+00:00]
+2026-07-31 05:34:03,446Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733200/iiif/M2017053011325248368_0024.jp2/full/max/0/native.jpg status=200 bytes=750364 -> acervo/yojokun/raw/vol04/0024.jpg [2026-07-31T05:34:03+00:00]
+2026-07-31 05:34:04,288Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733300/iiif/M2017053011325248368_0025.jp2/full/max/0/native.jpg status=200 bytes=769509 -> acervo/yojokun/raw/vol04/0025.jpg [2026-07-31T05:34:04+00:00]
+2026-07-31 05:34:06,286Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733400/iiif/M2017053011325248368_0026.jp2/full/max/0/native.jpg status=200 bytes=707232 -> acervo/yojokun/raw/vol04/0026.jpg [2026-07-31T05:34:06+00:00]
+2026-07-31 05:34:07,059Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733500/iiif/M2017053011325248368_0027.jp2/full/max/0/native.jpg status=200 bytes=575231 -> acervo/yojokun/raw/vol04/0027.jpg [2026-07-31T05:34:07+00:00]
+2026-07-31 05:34:08,149Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733600/iiif/M2017053011325248368_0028.jp2/full/max/0/native.jpg status=200 bytes=580220 -> acervo/yojokun/raw/vol04/0028.jpg [2026-07-31T05:34:08+00:00]
+2026-07-31 05:34:09,276Z INFO PDF montado yojokun-vol04.pdf (28 páginas, 20573513 bytes)
+2026-07-31 05:34:09,348Z INFO MANIFEST yojokun/yojokun-vol04.pdf (20573513 bytes)
+2026-07-31 05:34:09,350Z INFO == Yōjōkun volume 5 (item 4319508)
+2026-07-31 05:34:10,097Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319508/manifest.json status=200 bytes=22578 (json)
+2026-07-31 05:34:10,102Z INFO    養生訓５: 24 páginas
+2026-07-31 05:34:11,832Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733700/iiif/M2017053011325848369_0001.jp2/full/max/0/native.jpg status=200 bytes=710888 -> acervo/yojokun/raw/vol05/0001.jpg [2026-07-31T05:34:11+00:00]
+2026-07-31 05:34:11,970Z WARNING GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/max/0/native.jpg status=403 tentativa 1; espera 2s
+2026-07-31 05:34:15,262Z WARNING GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/max/0/native.jpg status=403 tentativa 2; espera 4s
+2026-07-31 05:34:20,001Z WARNING GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/max/0/native.jpg status=403 tentativa 3; espera 8s
+2026-07-31 05:34:20,004Z WARNING    página 2 em max falhou (HTTP 403 em https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/max/0/native.jpg); tentando 1500px
+2026-07-31 05:34:22,722Z WARNING GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/1500,/0/native.jpg status=403 tentativa 1; espera 2s
+2026-07-31 05:34:27,029Z WARNING GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/1500,/0/native.jpg status=403 tentativa 2; espera 4s
+2026-07-31 05:34:31,768Z WARNING GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/1500,/0/native.jpg status=403 tentativa 3; espera 8s
+2026-07-31 05:34:31,813Z ERROR Yōjōkun falhou: HTTP 403 em https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/1500,/0/native.jpg
+Traceback (most recent call last):
+  File "/home/user/BrProject/archiver/yojokun.py", line 90, in fetch
+    core.download(url, alvo, min_bytes=5_000)
+  File "/home/user/BrProject/archiver/core.py", line 146, in download
+    resp = get(url, stream=True)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/BrProject/archiver/core.py", line 123, in get
+    raise last_exc
+requests.exceptions.HTTPError: HTTP 403 em https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/max/0/native.jpg
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/BrProject/archiver/main.py", line 43, in main
+    yojokun.fetch(manifest)
+  File "/home/user/BrProject/archiver/yojokun.py", line 94, in fetch
+    core.download(f"{base}/{TAMANHO_FALLBACK}", alvo, min_bytes=5_000)
+  File "/home/user/BrProject/archiver/core.py", line 146, in download
+    resp = get(url, stream=True)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/BrProject/archiver/core.py", line 123, in get
+    raise last_exc
+requests.exceptions.HTTPError: HTTP 403 em https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/1500,/0/native.jpg
+
+2026-07-31 05:34:31,820Z INFO ============================================================
+2026-07-31 05:34:31,820Z ERROR FALHAS (1):
+2026-07-31 05:34:31,822Z ERROR   - yojokun: HTTP 403 em https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/1500,/0/native.jpg
+2026-07-31 05:37:47,837Z INFO == Yōjōkun volume 1 (item 4318676)
+2026-07-31 05:37:49,234Z INFO GET https://www.digital.archives.go.jp/api/iiif/4318676/manifest.json status=200 bytes=31648 (json)
+2026-07-31 05:37:49,235Z INFO    養生訓１: 34 páginas
+2026-07-31 05:37:49,235Z INFO SKIP 0001.jpg (já existe, 723033 bytes)
+2026-07-31 05:37:49,235Z INFO SKIP 0002.jpg (já existe, 564115 bytes)
+2026-07-31 05:37:49,235Z INFO SKIP 0003.jpg (já existe, 650181 bytes)
+2026-07-31 05:37:49,236Z INFO SKIP 0004.jpg (já existe, 749809 bytes)
+2026-07-31 05:37:49,236Z INFO SKIP 0005.jpg (já existe, 754626 bytes)
+2026-07-31 05:37:49,236Z INFO SKIP 0006.jpg (já existe, 767889 bytes)
+2026-07-31 05:37:49,236Z INFO SKIP 0007.jpg (já existe, 748124 bytes)
+2026-07-31 05:37:49,237Z INFO SKIP 0008.jpg (já existe, 760021 bytes)
+2026-07-31 05:37:49,237Z INFO SKIP 0009.jpg (já existe, 765877 bytes)
+2026-07-31 05:37:49,237Z INFO SKIP 0010.jpg (já existe, 760794 bytes)
+2026-07-31 05:37:49,237Z INFO SKIP 0011.jpg (já existe, 765448 bytes)
+2026-07-31 05:37:49,237Z INFO SKIP 0012.jpg (já existe, 771749 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0013.jpg (já existe, 776487 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0014.jpg (já existe, 767431 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0015.jpg (já existe, 751044 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0016.jpg (já existe, 760365 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0017.jpg (já existe, 752901 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0018.jpg (já existe, 757595 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0019.jpg (já existe, 745705 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0020.jpg (já existe, 751894 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0021.jpg (já existe, 749525 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0022.jpg (já existe, 739628 bytes)
+2026-07-31 05:37:49,238Z INFO SKIP 0023.jpg (já existe, 741253 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0024.jpg (já existe, 756740 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0025.jpg (já existe, 759003 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0026.jpg (já existe, 759628 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0027.jpg (já existe, 760973 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0028.jpg (já existe, 775844 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0029.jpg (já existe, 763727 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0030.jpg (já existe, 761672 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0031.jpg (já existe, 752897 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0032.jpg (já existe, 703506 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0033.jpg (já existe, 571345 bytes)
+2026-07-31 05:37:49,239Z INFO SKIP 0034.jpg (já existe, 587214 bytes)
+2026-07-31 05:37:49,313Z INFO MANIFEST yojokun/yojokun-vol01.pdf (25046463 bytes)
+2026-07-31 05:37:49,313Z INFO == Yōjōkun volume 2 (item 4318677)
+2026-07-31 05:37:49,633Z INFO GET https://www.digital.archives.go.jp/api/iiif/4318677/manifest.json status=200 bytes=31648 (json)
+2026-07-31 05:37:49,633Z INFO    養生訓２: 34 páginas
+2026-07-31 05:37:49,633Z INFO SKIP 0001.jpg (já existe, 712959 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0002.jpg (já existe, 555721 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0003.jpg (já existe, 644047 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0004.jpg (já existe, 748604 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0005.jpg (já existe, 747590 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0006.jpg (já existe, 735508 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0007.jpg (já existe, 734932 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0008.jpg (já existe, 733696 bytes)
+2026-07-31 05:37:49,634Z INFO SKIP 0009.jpg (já existe, 732573 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0010.jpg (já existe, 730287 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0011.jpg (já existe, 725720 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0012.jpg (já existe, 758067 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0013.jpg (já existe, 753538 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0014.jpg (já existe, 748518 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0015.jpg (já existe, 752664 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0016.jpg (já existe, 750915 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0017.jpg (já existe, 747399 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0018.jpg (já existe, 747032 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0019.jpg (já existe, 736841 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0020.jpg (já existe, 731671 bytes)
+2026-07-31 05:37:49,635Z INFO SKIP 0021.jpg (já existe, 747679 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0022.jpg (já existe, 458903 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0023.jpg (já existe, 753749 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0024.jpg (já existe, 747362 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0025.jpg (já existe, 740052 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0026.jpg (já existe, 738573 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0027.jpg (já existe, 746964 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0028.jpg (já existe, 745188 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0029.jpg (já existe, 748322 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0030.jpg (já existe, 761073 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0031.jpg (já existe, 774940 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0032.jpg (já existe, 721400 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0033.jpg (já existe, 586000 bytes)
+2026-07-31 05:37:49,636Z INFO SKIP 0034.jpg (já existe, 583919 bytes)
+2026-07-31 05:37:49,710Z INFO MANIFEST yojokun/yojokun-vol02.pdf (24400831 bytes)
+2026-07-31 05:37:49,710Z INFO == Yōjōkun volume 3 (item 4319506)
+2026-07-31 05:37:50,624Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319506/manifest.json status=200 bytes=24392 (json)
+2026-07-31 05:37:50,625Z INFO    養生訓３: 26 páginas
+2026-07-31 05:37:50,625Z INFO SKIP 0001.jpg (já existe, 717018 bytes)
+2026-07-31 05:37:50,625Z INFO SKIP 0002.jpg (já existe, 548564 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0003.jpg (já existe, 674686 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0004.jpg (já existe, 747853 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0005.jpg (já existe, 759878 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0006.jpg (já existe, 764186 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0007.jpg (já existe, 763645 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0008.jpg (já existe, 753272 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0009.jpg (já existe, 760784 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0010.jpg (já existe, 767032 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0011.jpg (já existe, 769513 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0012.jpg (já existe, 760236 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0013.jpg (já existe, 755448 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0014.jpg (já existe, 745036 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0015.jpg (já existe, 741397 bytes)
+2026-07-31 05:37:50,626Z INFO SKIP 0016.jpg (já existe, 752983 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0017.jpg (já existe, 764225 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0018.jpg (já existe, 756626 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0019.jpg (já existe, 759658 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0020.jpg (já existe, 751753 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0021.jpg (já existe, 736879 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0022.jpg (já existe, 770751 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0023.jpg (já existe, 760308 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0024.jpg (já existe, 752207 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0025.jpg (já existe, 604423 bytes)
+2026-07-31 05:37:50,627Z INFO SKIP 0026.jpg (já existe, 571793 bytes)
+2026-07-31 05:37:50,684Z INFO MANIFEST yojokun/yojokun-vol03.pdf (19024424 bytes)
+2026-07-31 05:37:50,684Z INFO == Yōjōkun volume 4 (item 4319507)
+2026-07-31 05:37:52,068Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319507/manifest.json status=200 bytes=26206 (json)
+2026-07-31 05:37:52,069Z INFO    養生訓４: 28 páginas
+2026-07-31 05:37:52,069Z INFO SKIP 0001.jpg (já existe, 716175 bytes)
+2026-07-31 05:37:52,069Z INFO SKIP 0002.jpg (já existe, 550883 bytes)
+2026-07-31 05:37:52,069Z INFO SKIP 0003.jpg (já existe, 645229 bytes)
+2026-07-31 05:37:52,069Z INFO SKIP 0004.jpg (já existe, 757912 bytes)
+2026-07-31 05:37:52,069Z INFO SKIP 0005.jpg (já existe, 756943 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0006.jpg (já existe, 758978 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0007.jpg (já existe, 768831 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0008.jpg (já existe, 774304 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0009.jpg (já existe, 773714 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0010.jpg (já existe, 752950 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0011.jpg (já existe, 774334 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0012.jpg (já existe, 755765 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0013.jpg (já existe, 807497 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0014.jpg (já existe, 766004 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0015.jpg (já existe, 750262 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0016.jpg (já existe, 736981 bytes)
+2026-07-31 05:37:52,070Z INFO SKIP 0017.jpg (já existe, 759525 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0018.jpg (já existe, 751239 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0019.jpg (já existe, 765450 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0020.jpg (já existe, 771436 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0021.jpg (já existe, 760179 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0022.jpg (já existe, 761214 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0023.jpg (já existe, 759858 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0024.jpg (já existe, 750364 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0025.jpg (já existe, 769509 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0026.jpg (já existe, 707232 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0027.jpg (já existe, 575231 bytes)
+2026-07-31 05:37:52,071Z INFO SKIP 0028.jpg (já existe, 580220 bytes)
+2026-07-31 05:37:52,155Z INFO MANIFEST yojokun/yojokun-vol04.pdf (20573513 bytes)
+2026-07-31 05:37:52,155Z INFO == Yōjōkun volume 5 (item 4319508)
+2026-07-31 05:37:53,142Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319508/manifest.json status=200 bytes=22578 (json)
+2026-07-31 05:37:53,144Z INFO    養生訓５: 24 páginas
+2026-07-31 05:37:53,144Z INFO SKIP 0001.jpg (já existe, 710888 bytes)
+2026-07-31 05:37:54,814Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733800/iiif/M2017053011325848369_0002.jp2/full/max/0/native.jpg status=200 bytes=549987 -> acervo/yojokun/raw/vol05/0002.jpg [2026-07-31T05:37:54+00:00]
+2026-07-31 05:37:56,581Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581733900/iiif/M2017053011325848369_0003.jp2/full/max/0/native.jpg status=200 bytes=657433 -> acervo/yojokun/raw/vol05/0003.jpg [2026-07-31T05:37:56+00:00]
+2026-07-31 05:37:59,073Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734000/iiif/M2017053011325848369_0004.jp2/full/max/0/native.jpg status=200 bytes=738489 -> acervo/yojokun/raw/vol05/0004.jpg [2026-07-31T05:37:59+00:00]
+2026-07-31 05:37:59,981Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734100/iiif/M2017053011325848369_0005.jp2/full/max/0/native.jpg status=200 bytes=736100 -> acervo/yojokun/raw/vol05/0005.jpg [2026-07-31T05:37:59+00:00]
+2026-07-31 05:38:01,891Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734200/iiif/M2017053011325848369_0006.jp2/full/max/0/native.jpg status=200 bytes=741713 -> acervo/yojokun/raw/vol05/0006.jpg [2026-07-31T05:38:01+00:00]
+2026-07-31 05:38:03,656Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734300/iiif/M2017053011325848369_0007.jp2/full/max/0/native.jpg status=200 bytes=748693 -> acervo/yojokun/raw/vol05/0007.jpg [2026-07-31T05:38:03+00:00]
+2026-07-31 05:38:05,391Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734400/iiif/M2017053011325848369_0008.jp2/full/max/0/native.jpg status=200 bytes=755113 -> acervo/yojokun/raw/vol05/0008.jpg [2026-07-31T05:38:05+00:00]
+2026-07-31 05:38:06,280Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734500/iiif/M2017053011325848369_0009.jp2/full/max/0/native.jpg status=200 bytes=737153 -> acervo/yojokun/raw/vol05/0009.jpg [2026-07-31T05:38:06+00:00]
+2026-07-31 05:38:07,286Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734600/iiif/M2017053011325848369_0010.jp2/full/max/0/native.jpg status=200 bytes=721476 -> acervo/yojokun/raw/vol05/0010.jpg [2026-07-31T05:38:07+00:00]
+2026-07-31 05:38:09,215Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734700/iiif/M2017053011325848369_0011.jp2/full/max/0/native.jpg status=200 bytes=729988 -> acervo/yojokun/raw/vol05/0011.jpg [2026-07-31T05:38:09+00:00]
+2026-07-31 05:38:10,131Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734800/iiif/M2017053011325848369_0012.jp2/full/max/0/native.jpg status=200 bytes=737307 -> acervo/yojokun/raw/vol05/0012.jpg [2026-07-31T05:38:10+00:00]
+2026-07-31 05:38:11,957Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581734900/iiif/M2017053011325848369_0013.jp2/full/max/0/native.jpg status=200 bytes=747205 -> acervo/yojokun/raw/vol05/0013.jpg [2026-07-31T05:38:11+00:00]
+2026-07-31 05:38:13,756Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735000/iiif/M2017053011325848369_0014.jp2/full/max/0/native.jpg status=200 bytes=729615 -> acervo/yojokun/raw/vol05/0014.jpg [2026-07-31T05:38:13+00:00]
+2026-07-31 05:38:15,714Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735100/iiif/M2017053011325848369_0015.jp2/full/max/0/native.jpg status=200 bytes=746073 -> acervo/yojokun/raw/vol05/0015.jpg [2026-07-31T05:38:15+00:00]
+2026-07-31 05:38:17,517Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735200/iiif/M2017053011325848369_0016.jp2/full/max/0/native.jpg status=200 bytes=735734 -> acervo/yojokun/raw/vol05/0016.jpg [2026-07-31T05:38:17+00:00]
+2026-07-31 05:38:18,451Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735300/iiif/M2017053011325848369_0017.jp2/full/max/0/native.jpg status=200 bytes=739822 -> acervo/yojokun/raw/vol05/0017.jpg [2026-07-31T05:38:18+00:00]
+2026-07-31 05:38:19,458Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735400/iiif/M2017053011325848369_0018.jp2/full/max/0/native.jpg status=200 bytes=740984 -> acervo/yojokun/raw/vol05/0018.jpg [2026-07-31T05:38:19+00:00]
+2026-07-31 05:38:20,410Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735500/iiif/M2017053011325848369_0019.jp2/full/max/0/native.jpg status=200 bytes=739234 -> acervo/yojokun/raw/vol05/0019.jpg [2026-07-31T05:38:20+00:00]
+2026-07-31 05:38:22,320Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735600/iiif/M2017053011325848369_0020.jp2/full/max/0/native.jpg status=200 bytes=736021 -> acervo/yojokun/raw/vol05/0020.jpg [2026-07-31T05:38:22+00:00]
+2026-07-31 05:38:23,232Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735700/iiif/M2017053011325848369_0021.jp2/full/max/0/native.jpg status=200 bytes=761475 -> acervo/yojokun/raw/vol05/0021.jpg [2026-07-31T05:38:23+00:00]
+2026-07-31 05:38:25,133Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735800/iiif/M2017053011325848369_0022.jp2/full/max/0/native.jpg status=200 bytes=739477 -> acervo/yojokun/raw/vol05/0022.jpg [2026-07-31T05:38:25+00:00]
+2026-07-31 05:38:25,996Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581735900/iiif/M2017053011325848369_0023.jp2/full/max/0/native.jpg status=200 bytes=594405 -> acervo/yojokun/raw/vol05/0023.jpg [2026-07-31T05:38:25+00:00]
+2026-07-31 05:38:27,977Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736000/iiif/M2017053011325848369_0024.jp2/full/max/0/native.jpg status=200 bytes=571920 -> acervo/yojokun/raw/vol05/0024.jpg [2026-07-31T05:38:27+00:00]
+2026-07-31 05:38:29,140Z INFO PDF montado yojokun-vol05.pdf (24 páginas, 17159551 bytes)
+2026-07-31 05:38:29,194Z INFO MANIFEST yojokun/yojokun-vol05.pdf (17159551 bytes)
+2026-07-31 05:38:29,194Z INFO == Yōjōkun volume 6 (item 4299674)
+2026-07-31 05:38:29,959Z INFO GET https://www.digital.archives.go.jp/api/iiif/4299674/manifest.json status=200 bytes=29834 (json)
+2026-07-31 05:38:29,960Z INFO    養生訓６: 32 páginas
+2026-07-31 05:38:31,308Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736100/iiif/M2017053011330348371_0001.jp2/full/max/0/native.jpg status=200 bytes=712030 -> acervo/yojokun/raw/vol06/0001.jpg [2026-07-31T05:38:31+00:00]
+2026-07-31 05:38:33,155Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736200/iiif/M2017053011330348371_0002.jp2/full/max/0/native.jpg status=200 bytes=553264 -> acervo/yojokun/raw/vol06/0002.jpg [2026-07-31T05:38:33+00:00]
+2026-07-31 05:38:34,914Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736300/iiif/M2017053011330348371_0003.jp2/full/max/0/native.jpg status=200 bytes=665117 -> acervo/yojokun/raw/vol06/0003.jpg [2026-07-31T05:38:34+00:00]
+2026-07-31 05:38:35,903Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736400/iiif/M2017053011330348371_0004.jp2/full/max/0/native.jpg status=200 bytes=753782 -> acervo/yojokun/raw/vol06/0004.jpg [2026-07-31T05:38:35+00:00]
+2026-07-31 05:38:37,708Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736500/iiif/M2017053011330348371_0005.jp2/full/max/0/native.jpg status=200 bytes=751978 -> acervo/yojokun/raw/vol06/0005.jpg [2026-07-31T05:38:37+00:00]
+2026-07-31 05:38:38,997Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736600/iiif/M2017053011330348371_0006.jp2/full/max/0/native.jpg status=200 bytes=756217 -> acervo/yojokun/raw/vol06/0006.jpg [2026-07-31T05:38:38+00:00]
+2026-07-31 05:38:40,864Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736700/iiif/M2017053011330348371_0007.jp2/full/max/0/native.jpg status=200 bytes=754409 -> acervo/yojokun/raw/vol06/0007.jpg [2026-07-31T05:38:40+00:00]
+2026-07-31 05:38:41,741Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736800/iiif/M2017053011330348371_0008.jp2/full/max/0/native.jpg status=200 bytes=758281 -> acervo/yojokun/raw/vol06/0008.jpg [2026-07-31T05:38:41+00:00]
+2026-07-31 05:38:42,742Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581736900/iiif/M2017053011330348371_0009.jp2/full/max/0/native.jpg status=200 bytes=753364 -> acervo/yojokun/raw/vol06/0009.jpg [2026-07-31T05:38:42+00:00]
+2026-07-31 05:38:44,682Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737000/iiif/M2017053011330348371_0010.jp2/full/max/0/native.jpg status=200 bytes=753399 -> acervo/yojokun/raw/vol06/0010.jpg [2026-07-31T05:38:44+00:00]
+2026-07-31 05:38:46,487Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737100/iiif/M2017053011330348371_0011.jp2/full/max/0/native.jpg status=200 bytes=761927 -> acervo/yojokun/raw/vol06/0011.jpg [2026-07-31T05:38:46+00:00]
+2026-07-31 05:38:47,322Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737200/iiif/M2017053011330348371_0012.jp2/full/max/0/native.jpg status=200 bytes=752799 -> acervo/yojokun/raw/vol06/0012.jpg [2026-07-31T05:38:47+00:00]
+2026-07-31 05:38:49,330Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737300/iiif/M2017053011330348371_0013.jp2/full/max/0/native.jpg status=200 bytes=759730 -> acervo/yojokun/raw/vol06/0013.jpg [2026-07-31T05:38:49+00:00]
+2026-07-31 05:38:55,684Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737400/iiif/M2017053011330348371_0014.jp2/full/max/0/native.jpg status=200 bytes=753804 -> acervo/yojokun/raw/vol06/0014.jpg [2026-07-31T05:38:55+00:00]
+2026-07-31 05:38:57,439Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737500/iiif/M2017053011330348371_0015.jp2/full/max/0/native.jpg status=200 bytes=758126 -> acervo/yojokun/raw/vol06/0015.jpg [2026-07-31T05:38:57+00:00]
+2026-07-31 05:38:59,214Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737600/iiif/M2017053011330348371_0016.jp2/full/max/0/native.jpg status=200 bytes=771350 -> acervo/yojokun/raw/vol06/0016.jpg [2026-07-31T05:38:59+00:00]
+2026-07-31 05:39:01,017Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737700/iiif/M2017053011330348371_0017.jp2/full/max/0/native.jpg status=200 bytes=766499 -> acervo/yojokun/raw/vol06/0017.jpg [2026-07-31T05:39:01+00:00]
+2026-07-31 05:39:01,974Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737800/iiif/M2017053011330348371_0018.jp2/full/max/0/native.jpg status=200 bytes=762242 -> acervo/yojokun/raw/vol06/0018.jpg [2026-07-31T05:39:01+00:00]
+2026-07-31 05:39:02,896Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581737900/iiif/M2017053011330348371_0019.jp2/full/max/0/native.jpg status=200 bytes=762719 -> acervo/yojokun/raw/vol06/0019.jpg [2026-07-31T05:39:02+00:00]
+2026-07-31 05:39:03,788Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738000/iiif/M2017053011330348371_0020.jp2/full/max/0/native.jpg status=200 bytes=765591 -> acervo/yojokun/raw/vol06/0020.jpg [2026-07-31T05:39:03+00:00]
+2026-07-31 05:39:04,844Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738100/iiif/M2017053011330348371_0021.jp2/full/max/0/native.jpg status=200 bytes=770154 -> acervo/yojokun/raw/vol06/0021.jpg [2026-07-31T05:39:04+00:00]
+2026-07-31 05:39:06,860Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738200/iiif/M2017053011330348371_0022.jp2/full/max/0/native.jpg status=200 bytes=764069 -> acervo/yojokun/raw/vol06/0022.jpg [2026-07-31T05:39:06+00:00]
+2026-07-31 05:39:08,692Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738300/iiif/M2017053011330348371_0023.jp2/full/max/0/native.jpg status=200 bytes=757214 -> acervo/yojokun/raw/vol06/0023.jpg [2026-07-31T05:39:08+00:00]
+2026-07-31 05:39:09,530Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738400/iiif/M2017053011330348371_0024.jp2/full/max/0/native.jpg status=200 bytes=756417 -> acervo/yojokun/raw/vol06/0024.jpg [2026-07-31T05:39:09+00:00]
+2026-07-31 05:39:10,582Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738500/iiif/M2017053011330348371_0025.jp2/full/max/0/native.jpg status=200 bytes=776228 -> acervo/yojokun/raw/vol06/0025.jpg [2026-07-31T05:39:10+00:00]
+2026-07-31 05:39:11,614Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738600/iiif/M2017053011330348371_0026.jp2/full/max/0/native.jpg status=200 bytes=775215 -> acervo/yojokun/raw/vol06/0026.jpg [2026-07-31T05:39:11+00:00]
+2026-07-31 05:39:15,080Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738700/iiif/M2017053011330348371_0027.jp2/full/max/0/native.jpg status=200 bytes=761636 -> acervo/yojokun/raw/vol06/0027.jpg [2026-07-31T05:39:15+00:00]
+2026-07-31 05:39:16,022Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738800/iiif/M2017053011330348371_0028.jp2/full/max/0/native.jpg status=200 bytes=769351 -> acervo/yojokun/raw/vol06/0028.jpg [2026-07-31T05:39:16+00:00]
+2026-07-31 05:39:17,820Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581738900/iiif/M2017053011330348371_0029.jp2/full/max/0/native.jpg status=200 bytes=748323 -> acervo/yojokun/raw/vol06/0029.jpg [2026-07-31T05:39:17+00:00]
+2026-07-31 05:39:19,585Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739000/iiif/M2017053011330348371_0030.jp2/full/max/0/native.jpg status=200 bytes=718626 -> acervo/yojokun/raw/vol06/0030.jpg [2026-07-31T05:39:19+00:00]
+2026-07-31 05:39:21,364Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739100/iiif/M2017053011330348371_0031.jp2/full/max/0/native.jpg status=200 bytes=568414 -> acervo/yojokun/raw/vol06/0031.jpg [2026-07-31T05:39:21+00:00]
+2026-07-31 05:39:23,092Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739200/iiif/M2017053011330348371_0032.jp2/full/max/0/native.jpg status=200 bytes=565564 -> acervo/yojokun/raw/vol06/0032.jpg [2026-07-31T05:39:23+00:00]
+2026-07-31 05:39:23,445Z INFO PDF montado yojokun-vol06.pdf (32 páginas, 23575189 bytes)
+2026-07-31 05:39:23,507Z INFO MANIFEST yojokun/yojokun-vol06.pdf (23575189 bytes)
+2026-07-31 05:39:23,507Z INFO == Yōjōkun volume 7 (item 4299675)
+2026-07-31 05:39:23,827Z INFO GET https://www.digital.archives.go.jp/api/iiif/4299675/manifest.json status=200 bytes=29834 (json)
+2026-07-31 05:39:23,828Z INFO    養生訓７: 32 páginas
+2026-07-31 05:39:25,405Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739300/iiif/M2017053011330948372_0001.jp2/full/max/0/native.jpg status=200 bytes=719576 -> acervo/yojokun/raw/vol07/0001.jpg [2026-07-31T05:39:25+00:00]
+2026-07-31 05:39:26,414Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739400/iiif/M2017053011330948372_0002.jp2/full/max/0/native.jpg status=200 bytes=549863 -> acervo/yojokun/raw/vol07/0002.jpg [2026-07-31T05:39:26+00:00]
+2026-07-31 05:39:28,312Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739500/iiif/M2017053011330948372_0003.jp2/full/max/0/native.jpg status=200 bytes=657720 -> acervo/yojokun/raw/vol07/0003.jpg [2026-07-31T05:39:28+00:00]
+2026-07-31 05:39:30,084Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739600/iiif/M2017053011330948372_0004.jp2/full/max/0/native.jpg status=200 bytes=758469 -> acervo/yojokun/raw/vol07/0004.jpg [2026-07-31T05:39:30+00:00]
+2026-07-31 05:39:31,084Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739700/iiif/M2017053011330948372_0005.jp2/full/max/0/native.jpg status=200 bytes=757529 -> acervo/yojokun/raw/vol07/0005.jpg [2026-07-31T05:39:31+00:00]
+2026-07-31 05:39:32,926Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739800/iiif/M2017053011330948372_0006.jp2/full/max/0/native.jpg status=200 bytes=763941 -> acervo/yojokun/raw/vol07/0006.jpg [2026-07-31T05:39:32+00:00]
+2026-07-31 05:39:34,760Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581739900/iiif/M2017053011330948372_0007.jp2/full/max/0/native.jpg status=200 bytes=761677 -> acervo/yojokun/raw/vol07/0007.jpg [2026-07-31T05:39:34+00:00]
+2026-07-31 05:39:35,700Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740000/iiif/M2017053011330948372_0008.jp2/full/max/0/native.jpg status=200 bytes=752292 -> acervo/yojokun/raw/vol07/0008.jpg [2026-07-31T05:39:35+00:00]
+2026-07-31 05:39:37,535Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740100/iiif/M2017053011330948372_0009.jp2/full/max/0/native.jpg status=200 bytes=757466 -> acervo/yojokun/raw/vol07/0009.jpg [2026-07-31T05:39:37+00:00]
+2026-07-31 05:39:38,497Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740200/iiif/M2017053011330948372_0010.jp2/full/max/0/native.jpg status=200 bytes=767803 -> acervo/yojokun/raw/vol07/0010.jpg [2026-07-31T05:39:38+00:00]
+2026-07-31 05:39:40,342Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740300/iiif/M2017053011330948372_0011.jp2/full/max/0/native.jpg status=200 bytes=758117 -> acervo/yojokun/raw/vol07/0011.jpg [2026-07-31T05:39:40+00:00]
+2026-07-31 05:39:42,092Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740400/iiif/M2017053011330948372_0012.jp2/full/max/0/native.jpg status=200 bytes=765973 -> acervo/yojokun/raw/vol07/0012.jpg [2026-07-31T05:39:42+00:00]
+2026-07-31 05:39:43,819Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740500/iiif/M2017053011330948372_0013.jp2/full/max/0/native.jpg status=200 bytes=763970 -> acervo/yojokun/raw/vol07/0013.jpg [2026-07-31T05:39:43+00:00]
+2026-07-31 05:39:44,751Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740600/iiif/M2017053011330948372_0014.jp2/full/max/0/native.jpg status=200 bytes=771127 -> acervo/yojokun/raw/vol07/0014.jpg [2026-07-31T05:39:44+00:00]
+2026-07-31 05:39:45,674Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740700/iiif/M2017053011330948372_0015.jp2/full/max/0/native.jpg status=200 bytes=760823 -> acervo/yojokun/raw/vol07/0015.jpg [2026-07-31T05:39:45+00:00]
+2026-07-31 05:39:46,787Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740800/iiif/M2017053011330948372_0016.jp2/full/max/0/native.jpg status=200 bytes=754977 -> acervo/yojokun/raw/vol07/0016.jpg [2026-07-31T05:39:46+00:00]
+2026-07-31 05:39:48,619Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581740900/iiif/M2017053011330948372_0017.jp2/full/max/0/native.jpg status=200 bytes=766833 -> acervo/yojokun/raw/vol07/0017.jpg [2026-07-31T05:39:48+00:00]
+2026-07-31 05:39:50,379Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741000/iiif/M2017053011330948372_0018.jp2/full/max/0/native.jpg status=200 bytes=769326 -> acervo/yojokun/raw/vol07/0018.jpg [2026-07-31T05:39:50+00:00]
+2026-07-31 05:39:51,293Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741100/iiif/M2017053011330948372_0019.jp2/full/max/0/native.jpg status=200 bytes=770193 -> acervo/yojokun/raw/vol07/0019.jpg [2026-07-31T05:39:51+00:00]
+2026-07-31 05:39:53,144Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741200/iiif/M2017053011330948372_0020.jp2/full/max/0/native.jpg status=200 bytes=763801 -> acervo/yojokun/raw/vol07/0020.jpg [2026-07-31T05:39:53+00:00]
+2026-07-31 05:39:54,056Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741300/iiif/M2017053011330948372_0021.jp2/full/max/0/native.jpg status=200 bytes=775676 -> acervo/yojokun/raw/vol07/0021.jpg [2026-07-31T05:39:54+00:00]
+2026-07-31 05:39:55,909Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741400/iiif/M2017053011330948372_0022.jp2/full/max/0/native.jpg status=200 bytes=764350 -> acervo/yojokun/raw/vol07/0022.jpg [2026-07-31T05:39:55+00:00]
+2026-07-31 05:39:56,895Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741500/iiif/M2017053011330948372_0023.jp2/full/max/0/native.jpg status=200 bytes=772302 -> acervo/yojokun/raw/vol07/0023.jpg [2026-07-31T05:39:56+00:00]
+2026-07-31 05:39:57,714Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741600/iiif/M2017053011330948372_0024.jp2/full/max/0/native.jpg status=200 bytes=759920 -> acervo/yojokun/raw/vol07/0024.jpg [2026-07-31T05:39:57+00:00]
+2026-07-31 05:39:58,741Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741700/iiif/M2017053011330948372_0025.jp2/full/max/0/native.jpg status=200 bytes=762172 -> acervo/yojokun/raw/vol07/0025.jpg [2026-07-31T05:39:58+00:00]
+2026-07-31 05:40:00,660Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741800/iiif/M2017053011330948372_0026.jp2/full/max/0/native.jpg status=200 bytes=763212 -> acervo/yojokun/raw/vol07/0026.jpg [2026-07-31T05:40:00+00:00]
+2026-07-31 05:40:01,581Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581741900/iiif/M2017053011330948372_0027.jp2/full/max/0/native.jpg status=200 bytes=753612 -> acervo/yojokun/raw/vol07/0027.jpg [2026-07-31T05:40:01+00:00]
+2026-07-31 05:40:03,387Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742000/iiif/M2017053011330948372_0028.jp2/full/max/0/native.jpg status=200 bytes=767547 -> acervo/yojokun/raw/vol07/0028.jpg [2026-07-31T05:40:03+00:00]
+2026-07-31 05:40:05,157Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742100/iiif/M2017053011330948372_0029.jp2/full/max/0/native.jpg status=200 bytes=769309 -> acervo/yojokun/raw/vol07/0029.jpg [2026-07-31T05:40:05+00:00]
+2026-07-31 05:40:06,958Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742200/iiif/M2017053011330948372_0030.jp2/full/max/0/native.jpg status=200 bytes=731992 -> acervo/yojokun/raw/vol07/0030.jpg [2026-07-31T05:40:06+00:00]
+2026-07-31 05:40:07,773Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742300/iiif/M2017053011330948372_0031.jp2/full/max/0/native.jpg status=200 bytes=567479 -> acervo/yojokun/raw/vol07/0031.jpg [2026-07-31T05:40:07+00:00]
+2026-07-31 05:40:08,784Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742400/iiif/M2017053011330948372_0032.jp2/full/max/0/native.jpg status=200 bytes=565703 -> acervo/yojokun/raw/vol07/0032.jpg [2026-07-31T05:40:08+00:00]
+2026-07-31 05:40:09,579Z INFO PDF montado yojokun-vol07.pdf (32 páginas, 23662100 bytes)
+2026-07-31 05:40:09,642Z INFO MANIFEST yojokun/yojokun-vol07.pdf (23662100 bytes)
+2026-07-31 05:40:09,642Z INFO == Yōjōkun volume 8 (item 4319510)
+2026-07-31 05:40:09,940Z INFO GET https://www.digital.archives.go.jp/api/iiif/4319510/manifest.json status=200 bytes=22578 (json)
+2026-07-31 05:40:09,941Z INFO    養生訓８: 24 páginas
+2026-07-31 05:40:11,540Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742500/iiif/M2017053011331648374_0001.jp2/full/max/0/native.jpg status=200 bytes=715815 -> acervo/yojokun/raw/vol08/0001.jpg [2026-07-31T05:40:11+00:00]
+2026-07-31 05:40:13,459Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742600/iiif/M2017053011331648374_0002.jp2/full/max/0/native.jpg status=200 bytes=654109 -> acervo/yojokun/raw/vol08/0002.jpg [2026-07-31T05:40:13+00:00]
+2026-07-31 05:40:15,182Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742700/iiif/M2017053011331648374_0003.jp2/full/max/0/native.jpg status=200 bytes=751296 -> acervo/yojokun/raw/vol08/0003.jpg [2026-07-31T05:40:15+00:00]
+2026-07-31 05:40:17,017Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742800/iiif/M2017053011331648374_0004.jp2/full/max/0/native.jpg status=200 bytes=750558 -> acervo/yojokun/raw/vol08/0004.jpg [2026-07-31T05:40:17+00:00]
+2026-07-31 05:40:17,963Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581742900/iiif/M2017053011331648374_0005.jp2/full/max/0/native.jpg status=200 bytes=741044 -> acervo/yojokun/raw/vol08/0005.jpg [2026-07-31T05:40:17+00:00]
+2026-07-31 05:40:18,823Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743000/iiif/M2017053011331648374_0006.jp2/full/max/0/native.jpg status=200 bytes=756275 -> acervo/yojokun/raw/vol08/0006.jpg [2026-07-31T05:40:18+00:00]
+2026-07-31 05:40:19,945Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743100/iiif/M2017053011331648374_0007.jp2/full/max/0/native.jpg status=200 bytes=751853 -> acervo/yojokun/raw/vol08/0007.jpg [2026-07-31T05:40:19+00:00]
+2026-07-31 05:40:21,922Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743200/iiif/M2017053011331648374_0008.jp2/full/max/0/native.jpg status=200 bytes=766078 -> acervo/yojokun/raw/vol08/0008.jpg [2026-07-31T05:40:21+00:00]
+2026-07-31 05:40:22,789Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743300/iiif/M2017053011331648374_0009.jp2/full/max/0/native.jpg status=200 bytes=767086 -> acervo/yojokun/raw/vol08/0009.jpg [2026-07-31T05:40:22+00:00]
+2026-07-31 05:40:24,700Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743400/iiif/M2017053011331648374_0010.jp2/full/max/0/native.jpg status=200 bytes=764518 -> acervo/yojokun/raw/vol08/0010.jpg [2026-07-31T05:40:24+00:00]
+2026-07-31 05:40:25,635Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743500/iiif/M2017053011331648374_0011.jp2/full/max/0/native.jpg status=200 bytes=759639 -> acervo/yojokun/raw/vol08/0011.jpg [2026-07-31T05:40:25+00:00]
+2026-07-31 05:40:27,452Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743600/iiif/M2017053011331648374_0012.jp2/full/max/0/native.jpg status=200 bytes=775836 -> acervo/yojokun/raw/vol08/0012.jpg [2026-07-31T05:40:27+00:00]
+2026-07-31 05:40:29,270Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743700/iiif/M2017053011331648374_0013.jp2/full/max/0/native.jpg status=200 bytes=755686 -> acervo/yojokun/raw/vol08/0013.jpg [2026-07-31T05:40:29+00:00]
+2026-07-31 05:40:31,071Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743800/iiif/M2017053011331648374_0014.jp2/full/max/0/native.jpg status=200 bytes=743172 -> acervo/yojokun/raw/vol08/0014.jpg [2026-07-31T05:40:31+00:00]
+2026-07-31 05:40:32,010Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581743900/iiif/M2017053011331648374_0015.jp2/full/max/0/native.jpg status=200 bytes=753714 -> acervo/yojokun/raw/vol08/0015.jpg [2026-07-31T05:40:32+00:00]
+2026-07-31 05:40:33,816Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744000/iiif/M2017053011331648374_0016.jp2/full/max/0/native.jpg status=200 bytes=755297 -> acervo/yojokun/raw/vol08/0016.jpg [2026-07-31T05:40:33+00:00]
+2026-07-31 05:40:35,638Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744100/iiif/M2017053011331648374_0017.jp2/full/max/0/native.jpg status=200 bytes=763219 -> acervo/yojokun/raw/vol08/0017.jpg [2026-07-31T05:40:35+00:00]
+2026-07-31 05:40:37,429Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744200/iiif/M2017053011331648374_0018.jp2/full/max/0/native.jpg status=200 bytes=784851 -> acervo/yojokun/raw/vol08/0018.jpg [2026-07-31T05:40:37+00:00]
+2026-07-31 05:40:39,306Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744300/iiif/M2017053011331648374_0019.jp2/full/max/0/native.jpg status=200 bytes=768228 -> acervo/yojokun/raw/vol08/0019.jpg [2026-07-31T05:40:39+00:00]
+2026-07-31 05:40:41,071Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744400/iiif/M2017053011331648374_0020.jp2/full/max/0/native.jpg status=200 bytes=764607 -> acervo/yojokun/raw/vol08/0020.jpg [2026-07-31T05:40:41+00:00]
+2026-07-31 05:40:42,835Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744500/iiif/M2017053011331648374_0021.jp2/full/max/0/native.jpg status=200 bytes=761379 -> acervo/yojokun/raw/vol08/0021.jpg [2026-07-31T05:40:42+00:00]
+2026-07-31 05:40:43,708Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744600/iiif/M2017053011331648374_0022.jp2/full/max/0/native.jpg status=200 bytes=687848 -> acervo/yojokun/raw/vol08/0022.jpg [2026-07-31T05:40:43+00:00]
+2026-07-31 05:40:45,613Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744700/iiif/M2017053011331648374_0023.jp2/full/max/0/native.jpg status=200 bytes=632002 -> acervo/yojokun/raw/vol08/0023.jpg [2026-07-31T05:40:45+00:00]
+2026-07-31 05:40:46,518Z INFO GET https://www.digital.archives.go.jp/api/content/item/da12/C100581744800/iiif/M2017053011331648374_0024.jp2/full/max/0/native.jpg status=200 bytes=585427 -> acervo/yojokun/raw/vol08/0024.jpg [2026-07-31T05:40:46+00:00]
+2026-07-31 05:40:46,694Z INFO PDF montado yojokun-vol08.pdf (24 páginas, 17722781 bytes)
+2026-07-31 05:40:46,740Z INFO MANIFEST yojokun/yojokun-vol08.pdf (17722781 bytes)
+2026-07-31 05:40:48,873Z INFO PDF montado yojokun-shotoku.pdf (234 páginas, 171159581 bytes)
+2026-07-31 05:40:49,325Z INFO MANIFEST yojokun/yojokun-shotoku.pdf (171159581 bytes)
+2026-07-31 05:40:50,917Z INFO GET https://www.nakamura-u.ac.jp/institute/media/library/kaibara/pdf/a_kana.pdf status=200 bytes=58055 -> acervo/yojokun/raw/a_kana.pdf [2026-07-31T05:40:50+00:00]
+2026-07-31 05:40:50,918Z INFO MANIFEST yojokun/hentaigana-tabela.pdf (58055 bytes)
+2026-07-31 05:40:50,919Z INFO ============================================================
+2026-07-31 05:40:50,919Z INFO Sem falhas.
+2026-07-31 05:41:05,251Z INFO OK   menagier/menagier-t1.pdf — 351 páginas, 12011311 bytes
+2026-07-31 05:41:07,200Z INFO OK   menagier/menagier-t2.pdf — 397 páginas, 17303860 bytes
+2026-07-31 05:41:07,377Z INFO OK   yojokun/hentaigana-tabela.pdf — 1 páginas, 58055 bytes
+2026-07-31 05:41:07,708Z INFO OK   yojokun/yojokun-shotoku.pdf — 234 páginas, 171159581 bytes
+2026-07-31 05:41:07,896Z INFO OK   yojokun/yojokun-vol01.pdf — 34 páginas, 25046463 bytes
+2026-07-31 05:41:08,057Z INFO OK   yojokun/yojokun-vol02.pdf — 34 páginas, 24400831 bytes
+2026-07-31 05:41:08,221Z INFO OK   yojokun/yojokun-vol03.pdf — 26 páginas, 19024424 bytes
+2026-07-31 05:41:08,392Z INFO OK   yojokun/yojokun-vol04.pdf — 28 páginas, 20573513 bytes
+2026-07-31 05:41:08,549Z INFO OK   yojokun/yojokun-vol05.pdf — 24 páginas, 17159551 bytes
+2026-07-31 05:41:08,712Z INFO OK   yojokun/yojokun-vol06.pdf — 32 páginas, 23575189 bytes
+2026-07-31 05:41:08,873Z INFO OK   yojokun/yojokun-vol07.pdf — 32 páginas, 23662100 bytes
+2026-07-31 05:41:09,040Z INFO OK   yojokun/yojokun-vol08.pdf — 24 páginas, 17722781 bytes
+2026-07-31 05:41:09,041Z INFO ============================================================
+2026-07-31 05:41:09,041Z INFO Sem falhas.
